@@ -1,0 +1,4985 @@
+{
+  "lastUpdated": "2025-05-22T23:18:38.698738",
+  "data": [
+    {
+      "model": "google/gemini-exp-1206 (no longer available)",
+      "ugi": 69.14,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemini-1.5-pro-exp-0827 (no longer available)",
+      "ugi": 66.58,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "xai/grok-3-beta",
+      "ugi": 63.56,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NousResearch/Hermes-3-Llama-3.1-405B",
+      "ugi": 62.52,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nicoboss/Hermes-3-Llama-3.1-405B-Uncensored",
+      "ugi": 61.7,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemini-2.5-pro-exp-03-25",
+      "ugi": 61.02,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemini-2.5-pro-preview-05-06",
+      "ugi": 60.38,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4o-2024-05-13",
+      "ugi": 59.36,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4.5-preview-2025-02-27",
+      "ugi": 59.29,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Behemoth-123B-v1 (metharme)",
+      "ugi": 58.8,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Behemoth-123B-v1.1 (metharme)",
+      "ugi": 57.69,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Behemoth-123B-v2",
+      "ugi": 57.43,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/mistral-medium-05-07",
+      "ugi": 56.77,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-MS-Nevoria-70b (llama-3)",
+      "ugi": 56.75,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Dungeonmaster-V2.2-Expanded-LLaMa-70B",
+      "ugi": 56.37,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o3-2025-04-16 (reasoning_effort=low)",
+      "ugi": 55.87,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "MarsupialAI/Monstral-123B-v2",
+      "ugi": 55.78,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-V3.3-LLaMa-70B",
+      "ugi": 55.67,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-R1",
+      "ugi": 55.65,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o3-2025-04-16 (reasoning_effort=high)",
+      "ugi": 55.65,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zerofata/L3.3-GeneticLemonade-Final-70B",
+      "ugi": 55.53,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NeverSleep/Lumimaid-v0.2-123B",
+      "ugi": 55.5,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "xai/grok-3-mini-beta (reasoning_effort=high)",
+      "ugi": 55.38,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-V3-0324",
+      "ugi": 54.97,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o1-2024-12-17 (reasoning_effort=high)",
+      "ugi": 54.75,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Behemoth-123B-v2.1",
+      "ugi": 54.39,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-V2.2-LLaMa-70B",
+      "ugi": 54.2,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4.1-2025-04-14",
+      "ugi": 53.55,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "deepseek-ai/DeepSeek-V3",
+      "ugi": 53.27,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/Mistral-Large-Instruct-2411",
+      "ugi": 53.16,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Legion-V2.1-LLaMa-70B",
+      "ugi": 53.03,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemini-2.0-pro-exp-02-05",
+      "ugi": 52.88,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "gghfez/Writer-Large-2411-v2.1",
+      "ugi": 52.88,
+      "w10": 8.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-V1.1-LLaMa-70B",
+      "ugi": 52.86,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "xai/grok-2-1212",
+      "ugi": 52.82,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Sao10K/Llama-3.3-70B-Vulpecula-r1",
+      "ugi": 52.79,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "xai/grok-3-mini-beta (reasoning_effort=low)",
+      "ugi": 52.68,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Dungeonmaster-V2.4-Expanded-LLaMa-70B",
+      "ugi": 52.65,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-3.3-MagicalGirl-2",
+      "ugi": 52.48,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-V3-LLaMa-70B",
+      "ugi": 52.18,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Behemoth-123B-v1.2",
+      "ugi": 52.16,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-V5-LLaMa-70B",
+      "ugi": 52.11,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthropic/claude-3-7-sonnet-20250219 (thinking=disabled)",
+      "ugi": 51.99,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4-0613",
+      "ugi": 51.8,
+      "w10": 0.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "sophosympatheia/Electranova-70B-v1.0",
+      "ugi": 51.56,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Negative_LLAMA_70B",
+      "ugi": 51.5,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Tarek07/Lascivious-LLaMa-70B",
+      "ugi": 51.22,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Nohobby/L3.3-Prikol-70B-v0.3",
+      "ugi": 50.94,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "MarsupialAI/Monstral-123B",
+      "ugi": 50.78,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TareksLab/L3.3-TRP-BASE-80-70B",
+      "ugi": 50.78,
+      "w10": 9.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-V1.2-LLaMa-70B",
+      "ugi": 50.65,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/L3.3-70B-Euryale-v2.3",
+      "ugi": 50.6,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "FluffyKaeloky/Luminum-v0.1-123B",
+      "ugi": 50.33,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthropic/claude-3-7-sonnet-20250219 (thinking=enabled, budget_tokens=32k)",
+      "ugi": 50.19,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Thespian-LLaMa-70B",
+      "ugi": 50.07,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "juvi21/Hermes-2-Theta-L3-Euryale-Ties-0.8-70B",
+      "ugi": 50.01,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/L3-70B-Euryale-v2.1",
+      "ugi": 49.99,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TareksLab/Experimental-Base-V1",
+      "ugi": 49.92,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "openai/gpt-4o-2024-08-06",
+      "ugi": 49.85,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "knifeayumu/Negative-Anubis-70B-v1",
+      "ugi": 49.81,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Llama-3.3-70B-Instruct-abliterated-finetuned",
+      "ugi": 49.78,
+      "w10": 9.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Llama-3.3-70B-Instruct-abliterated",
+      "ugi": 49.75,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "sophosympatheia/Nova-Tempus-70B-v0.1",
+      "ugi": 49.58,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "xai/grok-beta",
+      "ugi": 49.53,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "mistralai/Mistral-Large-Instruct-2407",
+      "ugi": 49.49,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4-0125-preview",
+      "ugi": 49.12,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/70B-L3.3-mhnnn-x1",
+      "ugi": 48.85,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "c4tdr0ut/L3.3-70B-Unrestricted-intelligence",
+      "ugi": 48.46,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Primogenitor-V2.1-LLaMa-70B",
+      "ugi": 47.6,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-V4-LLaMa-70B",
+      "ugi": 47.51,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Black-Ink-Guild/Pernicious_Prophecy_70B",
+      "ugi": 47.34,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TheDrummer/Behemoth-123B-v1 (mistral)",
+      "ugi": 47.19,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nbeerbower/Llama-3.1-Nemotron-lorablated-70B",
+      "ugi": 46.79,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-3.3-CURSEDMAGICALGIRL-2",
+      "ugi": 46.61,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4-turbo-2024-04-09",
+      "ugi": 46.54,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zerofata/L3.3-Genetic-Lemonade-Sunset-70B",
+      "ugi": 46.26,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Progenitor-X-LLaMa-70B",
+      "ugi": 46.14,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4-1106-preview",
+      "ugi": 45.87,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0",
+      "ugi": 45.28,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TareksLab/L3.3-TRP-BASE-50-70B",
+      "ugi": 45.28,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-Cu-Mai-R1-70b",
+      "ugi": 45.01,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nbeerbower/Llama3-Asobi-70B",
+      "ugi": 45.01,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/70B-L3.3-Cirrus-x1",
+      "ugi": 44.74,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Fallen-Command-A-111B-v1.1 (Q6_K_L)",
+      "ugi": 44.72,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthropic/claude-3-5-sonnet-20241022",
+      "ugi": 44.64,
+      "w10": 0.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ArliAI/Llama-3.3-70B-ArliAI-RPMax-v1.4",
+      "ugi": 44.63,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "darkc0de/XortronCriminalComputingConfig",
+      "ugi": 43.29,
+      "w10": 9.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "knifeayumu/Cydonia-v1.3-Magnum-v4-22B",
+      "ugi": 43.16,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-MiraiFanfare-2-3.3-70B (llama-3)",
+      "ugi": 43.16,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Fallen-Command-A-111B-v1",
+      "ugi": 43.03,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Steelskull/L3.3-Mokume-Gane-R1-70b-v1.1",
+      "ugi": 42.75,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Doctor-Shotgun/L3.3-70B-Magnum-v4-SE",
+      "ugi": 42.66,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-Nevoria-R1-70b (llama-3)",
+      "ugi": 42.66,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-EveningMirai-3.3-70B",
+      "ugi": 42.66,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "CohereForAI/c4ai-command-r-plus-08-2024",
+      "ugi": 42.65,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/L3.1-70B-Hanami-x1",
+      "ugi": 42.59,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-MagicalGirl",
+      "ugi": 42.36,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1",
+      "ugi": 41.94,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3-MS-Astoria-70b",
+      "ugi": 41.68,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemini-2.0-flash-exp",
+      "ugi": 41.43,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Behemoth-123B-v1.1 (mistral)",
+      "ugi": 41.29,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Nohobby/L3.3-Prikol-70B-v0.5",
+      "ugi": 41.24,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allura-org/Bigger-Body-70b",
+      "ugi": 41.17,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "PocketDoc/Dans-PersonalityEngine-V1.2.0-24b",
+      "ugi": 40.93,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "schonsense/Llama-3.3-70B-Inst-Ablit-Flammades-SLERP",
+      "ugi": 40.91,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sorawiz/MistralCreative-24B-Chat",
+      "ugi": 40.49,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "migtissera/Tess-v2.5.2-Qwen2-72B",
+      "ugi": 40.06,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Cydonia-22B-v1.3",
+      "ugi": 40.04,
+      "w10": 8.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-San-Mai-R1-70b",
+      "ugi": 40.04,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o1-2024-12-17 (reasoning_effort=low)",
+      "ugi": 40.03,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4o-2024-11-20",
+      "ugi": 39.95,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-24B (mistral - V7-Tekken)",
+      "ugi": 39.91,
+      "w10": 9.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "darkc0de/Xortron2025",
+      "ugi": 39.91,
+      "w10": 9.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "CombinHorizon/zetasepic-abliteratedV2-Qwen2.5-32B-Inst-BaseMerge-TIES",
+      "ugi": 39.82,
+      "w10": 9.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "ugi": 39.49,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-3.X-Workout-70B",
+      "ugi": 39.36,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemini-2.0-flash",
+      "ugi": 39.32,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "alpindale/WizardLM-2-8x22B",
+      "ugi": 39.31,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/Llama3.3-Grand-Skibidi-70B",
+      "ugi": 39.15,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Mistral-Small-24B-Instruct-2501-abliterated",
+      "ugi": 39.11,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "BeaverAI/Fallen-Mistral-Small-3.1-24B-v1e-GGUF",
+      "ugi": 38.88,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-Electra-R1-70b",
+      "ugi": 38.86,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-3.3-MagicalGirl-2.5",
+      "ugi": 38.83,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zetasepic/Qwen2.5-32B-Instruct-abliterated-v2",
+      "ugi": 38.69,
+      "w10": 8.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "zetasepic/Qwen2.5-72B-Instruct-abliterated-v2",
+      "ugi": 38.69,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-MS-Nevoria-70b (metharme)",
+      "ugi": 38.65,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Anubis-70B-v1",
+      "ugi": 38.56,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NaniDAO/Llama-3.3-70B-Instruct-ablated",
+      "ugi": 38.54,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "LatitudeGames/Wayfarer-Large-70B-Llama-3.3",
+      "ugi": 38.41,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "miqudev/miqu-1-70b",
+      "ugi": 38.4,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Irix-12B-Model_Stock",
+      "ugi": 38.21,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "ugi": 37.98,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nbeerbower/llama3.1-kartoffeldes-70B",
+      "ugi": 37.88,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nbeerbower/Llama-3.1-Saoirse-70B",
+      "ugi": 37.88,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "darkc0de/BlackXorDolphTronGOAT",
+      "ugi": 37.79,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/Forgotten-Safeword-24B",
+      "ugi": 37.78,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/UnslopSmall-22B-v1 (metharme)",
+      "ugi": 37.65,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Cydonia-22B-v1.2",
+      "ugi": 37.46,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "OddTheGreat/Apparatus_24B",
+      "ugi": 37.46,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "concedo/Beepo-22B",
+      "ugi": 37.43,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-Gen11-gemma-2-9B",
+      "ugi": 37.35,
+      "w10": 8.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TheDrummer/Big-Tiger-Gemma-27B-v1",
+      "ugi": 37.32,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/mergekit-model_stock-prczfmj",
+      "ugi": 37.22,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "ugi": 37.2,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Anubis-Pro-105B-v1",
+      "ugi": 37.15,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Tarek07/Primogenitor-V2-LLaMa-70B",
+      "ugi": 37.15,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/EsotericKnowledge-24B",
+      "ugi": 37.1,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "sophosympatheia/Midnight-Miqu-70B-v1.5",
+      "ugi": 36.99,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+      "ugi": 36.83,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+      "ugi": 36.71,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Guilherme34/Hermes-3-Llama-3.1-70B-Uncensored",
+      "ugi": 36.7,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-Gen10-gemma-2-9B",
+      "ugi": 36.68,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "AiCloser/Qwen2.5-32B-AGI",
+      "ugi": 36.66,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "lars1234/Mistral-Small-24B-Instruct-2501-writer",
+      "ugi": 36.66,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "CohereForAI/c4ai-command-r-08-2024",
+      "ugi": 36.57,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-24B (chatml)",
+      "ugi": 36.52,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-Damascus-R1",
+      "ugi": 36.5,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o4-mini-2025-04-16 (reasoning_effort=high)",
+      "ugi": 36.38,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "failspy/llama-3-70B-Instruct-abliterated",
+      "ugi": 36.37,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "LatitudeGames/Harbinger-24B",
+      "ugi": 36.34,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "aixonlab/Eurydice-24b-v2",
+      "ugi": 36.31,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "byroneverson/gemma-2-27b-it-abliterated",
+      "ugi": 36.27,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TareksLab/L3.3-TRP-BASE-30-70B",
+      "ugi": 36.27,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ArliAI/Llama-3.1-70B-ArliAI-RPMax-v1.3",
+      "ugi": 36.27,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Darkknight535/MS-Moonlight-22B-v3",
+      "ugi": 36.17,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "ugi": 36.09,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Twilight-SCE-12B-v2",
+      "ugi": 36.08,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/EtherealAurora-12B-v2",
+      "ugi": 36.06,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/Mistral-Small-2501-SCE-Mashup-2-24B (mistral - V7-Tekken)",
+      "ugi": 36.05,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "alpindale/goliath-120b",
+      "ugi": 35.8,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zerofata/L3.3-GeneticLemonade-Unleashed-70B",
+      "ugi": 35.77,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Skyfall-36B-v2",
+      "ugi": 35.64,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "sophosympatheia/Nova-Tempus-70B-v0.2",
+      "ugi": 35.62,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen6fix-gemma-2-9B",
+      "ugi": 35.28,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/UnslopSmall-22B-v1 (mistral)",
+      "ugi": 35.14,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Nexesenex/Llama_3.x_70b_Hexagon_Purple_V2",
+      "ugi": 35.12,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/L3.3-Nevoria-R1-70b (metharme)",
+      "ugi": 34.99,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mlabonne/gemma-3-27b-it-abliterated",
+      "ugi": 34.96,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "summykai/gemma3-27b-abliterated-dpo",
+      "ugi": 34.96,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Steelskull/MSM-MS-Cydrion-22B",
+      "ugi": 34.72,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Paxinium",
+      "ugi": 34.68,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Qwen2.5-14B-Instruct-1M-abliterated",
+      "ugi": 34.67,
+      "w10": 9.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DoppelReflEx/MiniusLight-24B-v2.1 (chatml)",
+      "ugi": 34.65,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "crestf411/L3-70B-sunfall-abliterated-v0.2",
+      "ugi": 34.62,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Tiger-Gemma-9B-v3",
+      "ugi": 34.57,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/Mistral-Small-2501-SCE-Mashup-2-24B (chatml)",
+      "ugi": 34.55,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthracite-org/magnum-v3-27b-kto",
+      "ugi": 34.5,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-3.5-turbo-0125",
+      "ugi": 34.44,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mradermacher/Gemma-Creative-9B-Base-GGUF",
+      "ugi": 34.37,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "yamatazen/EtherealAurora-12B-v3",
+      "ugi": 34.34,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NeverSleep/Lumimaid-v0.2-70B",
+      "ugi": 34.24,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "IlyaGusev/gemma-2-9b-it-abliterated",
+      "ugi": 34.24,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Skyfall-39B-v1",
+      "ugi": 34.19,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/MN-GRAND-Gutenberg-Lyra4-Lyra-12B-DARKNESS",
+      "ugi": 34.18,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B-v2 (mistral)",
+      "ugi": 34.13,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Merge6-gemma-2-9B",
+      "ugi": 34.04,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-Gen7-gemma-2-9B",
+      "ugi": 34.04,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-Gen11-gemma-2-9B",
+      "ugi": 34.03,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen6-gemma-2-9B",
+      "ugi": 34.02,
+      "w10": 8.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Aryanne/QwentileSwap",
+      "ugi": 33.99,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sorawiz/Gemma-9B-Chat",
+      "ugi": 33.98,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "PocketDoc/Dans-PersonalityEngine-V1.1.0-12b",
+      "ugi": 33.98,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-Gen7-gemma-2-9B",
+      "ugi": 33.97,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Irix_1.1-12B-Model_Stock",
+      "ugi": 33.88,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Gryphe/Pantheon-RP-1.8-24b-Small-3.1",
+      "ugi": 33.85,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Fallen-Gemma3-27B-v1",
+      "ugi": 33.84,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-4.1-mini-2025-04-14",
+      "ugi": 33.82,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen12-gemma-2-9B",
+      "ugi": 33.82,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "redrix/patricide-12B-Unslop-Mell",
+      "ugi": 33.8,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Redemption_Wind_24B",
+      "ugi": 33.76,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "SentientAGI/Dobby-Unhinged-Llama-3.3-70B",
+      "ugi": 33.68,
+      "w10": 2.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-Gen12-gemma-2-9B",
+      "ugi": 33.68,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Francois-PE-V2-Huali-12B",
+      "ugi": 33.6,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen8-gemma-2-9B",
+      "ugi": 33.55,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/BlueLight-12B",
+      "ugi": 33.55,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/EXAONE-3.5-32B-Instruct-abliterated",
+      "ugi": 33.5,
+      "w10": 7.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "zelk12/MT1-Gen8-gemma-2-9B",
+      "ugi": 33.47,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "crestf411/L3-70B-daybreak-abliterated-v0.4",
+      "ugi": 33.31,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/GrayLine-Qwen3-14B (thinking=disabled)",
+      "ugi": 33.29,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/Forgotten-Safeword-70B-3.6",
+      "ugi": 33.14,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Tiger-Gemma-9B-v2",
+      "ugi": 33.1,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "mergekit-community/MN-Hekate-Enodia-12B",
+      "ugi": 33.0,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Yobenboben/Qwen2.5-32B-Juicy_Snowballs",
+      "ugi": 32.89,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Aurora-SCE-12B",
+      "ugi": 32.87,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen11-gemma-2-9B",
+      "ugi": 32.78,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ToastyPigeon/g3-27b-beepo-mmtest",
+      "ugi": 32.77,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthracite-org/magnum-v4-22b",
+      "ugi": 32.74,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-Gen9-gemma-2-9B",
+      "ugi": 32.74,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Irixate_V2.1-12B-Model_Stock",
+      "ugi": 32.72,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/MN-12B-Lyra-v1",
+      "ugi": 32.61,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Goekdeniz-Guelmez/Josiefied-Qwen3-8B-abliterated-v1 (thinking=disabled)",
+      "ugi": 32.6,
+      "w10": 9.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "BeaverAI/Fallen-Mistral-R1-24B-v1b-GGUF",
+      "ugi": 32.57,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-Gen9-gemma-2-9B",
+      "ugi": 32.52,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Lambent/Gilded-Arsenic-12B",
+      "ugi": 32.51,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Ppoyaa/MythoNemo-L3.1-70B-v1.0",
+      "ugi": 32.46,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Irixate_V2.1_ALT-12B-Model_Stock",
+      "ugi": 32.43,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "MarinaraSpaghetti/NemoMix-Unleashed-12B",
+      "ugi": 32.42,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/LoyalMaid-12B",
+      "ugi": 32.4,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Merge7-gemma-2-9B",
+      "ugi": 32.33,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Chthonia-12B",
+      "ugi": 32.26,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/YM-12B-Model_Stock",
+      "ugi": 32.24,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/gpt-3.5-turbo-1106",
+      "ugi": 32.21,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-X-Dolphin",
+      "ugi": 32.11,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen10-gemma-2-9B",
+      "ugi": 32.1,
+      "w10": 8.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "zelk12/MT-Merge9-gemma-2-9B",
+      "ugi": 32.09,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SentientAGI/Dobby-Mini-Unhinged-Llama-3.1-8B",
+      "ugi": 32.04,
+      "w10": 7.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-Gen13-gemma-2-9B",
+      "ugi": 31.97,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-Gen6-gemma-2-9B",
+      "ugi": 31.91,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen7-gemma-2-9B",
+      "ugi": 31.9,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "shisa-ai/shisa-v2-mistral-small-24b",
+      "ugi": 31.89,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-Gen10-gemma-2-9B",
+      "ugi": 31.88,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TheDrummer/Cydonia-24B-v2.1",
+      "ugi": 31.86,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/Forgotten-Safeword-24B-v4.0",
+      "ugi": 31.74,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Merge8-gemma-2-9B",
+      "ugi": 31.72,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemma-3-27b-it",
+      "ugi": 31.66,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthropic/claude-3-5-sonnet-20240620",
+      "ugi": 31.65,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "w4r10ck/SOLAR-10.7B-Instruct-v1.0-uncensored",
+      "ugi": 31.63,
+      "w10": 9.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Orihime-12B (chatml)",
+      "ugi": 31.62,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/The-Omega-Directive-M-24B-v1.1",
+      "ugi": 31.6,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/HMS-Slerp-12B-v2",
+      "ugi": 31.58,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "recoilme/recoilme-gemma-2-9B-v0.5",
+      "ugi": 31.56,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/EsotericLight-12B",
+      "ugi": 31.56,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Gemma2-Evelyn-9B",
+      "ugi": 31.55,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Gemma2-Snowflakes-9B",
+      "ugi": 31.55,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TouchNight/gemma-2-Ifable-abliterated-9B-untied",
+      "ugi": 31.54,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "voidai-research/void-1-27b",
+      "ugi": 31.52,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen10-gemma-2-9B",
+      "ugi": 31.52,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "yvvki/Erotophobia-24B-v1.1",
+      "ugi": 31.45,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "cognitivecomputations/Dolphin3.0-Mistral-24B",
+      "ugi": 31.43,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Lambent/arsenic-nemo-unleashed-12B",
+      "ugi": 31.38,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Cydonia-24B-v2",
+      "ugi": 31.35,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Suavemente-8B-Model_Stock",
+      "ugi": 31.33,
+      "w10": 7.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "nbeerbower/Dumpling-Qwen2.5-32B",
+      "ugi": 31.31,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Aspire-8B-model_stock",
+      "ugi": 31.3,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Aurora_faustus-8B-LINEAR",
+      "ugi": 31.27,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen9-gemma-2-9B",
+      "ugi": 31.25,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "BeaverAI/Rocinante-12B-v1a-GGUF",
+      "ugi": 31.23,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Columbidae/gemma-3-27b-half-full",
+      "ugi": 31.14,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "cognitivecomputations/dolphin-2.9.2-qwen2-72b",
+      "ugi": 31.11,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ProdeusUnity/Dazzling-Star-Aurora-32b-v0.0-Experimental-1130",
+      "ugi": 31.03,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Sappho-n4-12B",
+      "ugi": 31.03,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-Gen6-gemma-2-9B",
+      "ugi": 30.99,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KaraKaraWitch/Llama-MiraiFanfare-2-3.3-70B (chatml)",
+      "ugi": 30.97,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-Gen8-gemma-2-9B",
+      "ugi": 30.84,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "HumanLLMs/Human-Like-Mistral-Nemo-Instruct-2407",
+      "ugi": 30.82,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "CohereForAI/c4ai-command-r-v01",
+      "ugi": 30.78,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/Mistral-Small-Instruct-2409",
+      "ugi": 30.74,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen3-235B-A22B (thinking=disabled)",
+      "ugi": 30.74,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Francois-Huali-12B",
+      "ugi": 30.68,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "OpenGenerativeAI/LOGIC-27B",
+      "ugi": 30.6,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o4-mini-2025-04-16 (reasoning_effort=low)",
+      "ugi": 30.59,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/EtherealAurora-12B",
+      "ugi": 30.51,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/amoral-gemma3-27B-v2",
+      "ugi": 30.49,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "CohereForAI/c4ai-command-r-plus",
+      "ugi": 30.48,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NousResearch/Hermes-3-Llama-3.1-8B",
+      "ugi": 30.48,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "v000000/L3-8B-Stheno-v3.2-abliterated",
+      "ugi": 30.46,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "arcee-ai/Arcee-Blitz",
+      "ugi": 30.4,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/L3-Grand-Story-Darkness-MOE-4X8-24.9B-e32",
+      "ugi": 30.39,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1",
+      "ugi": 30.38,
+      "w10": 6.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-32B-Instruct",
+      "ugi": 30.32,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Levelled-12B-Model_Stock",
+      "ugi": 30.29,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/ElvenMaid-12B-Stock",
+      "ugi": 30.27,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ohyeah1/Violet-Lyra-Gutenberg-v2",
+      "ugi": 30.26,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Gemma2-Alicia-9B",
+      "ugi": 30.26,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "zelk12/MT-gemma-3-12B",
+      "ugi": 30.23,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nvidia/Llama-3.1-Nemotron-70B-Instruct",
+      "ugi": 30.16,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen13-gemma-2-9B",
+      "ugi": 30.14,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "KOOWEEYUS/BlackSheep-RP-12B",
+      "ugi": 30.12,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "ohyeah1/Violet-Lyra-Gutenberg-v3",
+      "ugi": 30.12,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Qwen2.5-14B-Instruct-abliterated-v2",
+      "ugi": 30.11,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+      "ugi": 30.08,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Gryphe/Pantheon-RP-1.6.1-12b-Nemo",
+      "ugi": 30.04,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen1-gemma-3-12B",
+      "ugi": 30.01,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Gen7-gemma-2-9B",
+      "ugi": 29.94,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/NightWind-12B",
+      "ugi": 29.94,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Impish_Mind_8B",
+      "ugi": 29.87,
+      "w10": 9.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Dusk_Rainbow",
+      "ugi": 29.84,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "IlyaGusev/saiga_gemma3_12b",
+      "ugi": 29.82,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MTM-Merge1-gemma-2-9B",
+      "ugi": 29.77,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nbeerbower/mistral-nemo-kartoffel-12B",
+      "ugi": 29.76,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/ElvenMaid-12B-v2",
+      "ugi": 29.7,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "some1nostr/Ostrich-Llama-3-70B",
+      "ugi": 29.56,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "OddTheGreat/Machina_24B.V2",
+      "ugi": 29.52,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "invisietch/MiS-Firefly-v0.2-22B",
+      "ugi": 29.39,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Hekate-Pyrtania-12B",
+      "ugi": 29.38,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "crestf411/MN-Slush",
+      "ugi": 29.36,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/EtherealNight-12B",
+      "ugi": 29.36,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DoppelReflEx/MiniusLight-24B-v2.1 (mistral - V7-Tekken)",
+      "ugi": 29.35,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/recoilme-gemma-2-Ataraxy-9B-v0.1-t0.25",
+      "ugi": 29.34,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/DigitalSoul-BlackSheep (mistral)",
+      "ugi": 29.27,
+      "w10": 7.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "yamatazen/EtherealMoon-12B",
+      "ugi": 29.26,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen11-gemma-2-9B",
+      "ugi": 29.25,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "DreadPoor/Sunk_Cost_Fallacy-8B-Model_Stock",
+      "ugi": 29.18,
+      "w10": 8.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "ohyeah1/Human-like-nemo-light",
+      "ugi": 29.15,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/ElvenMaid-12B-v3",
+      "ugi": 29.14,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/ElvenMaid-12B",
+      "ugi": 29.13,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Shisa-v2-Mistral-Nemo-12B-Abliterated",
+      "ugi": 29.13,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/ichor_1.1-8B-Model_Stock",
+      "ugi": 29.12,
+      "w10": 6.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "DreadPoor/Noxis-8B-LINEAR",
+      "ugi": 29.1,
+      "w10": 8.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "natong19/Mistral-Nemo-Instruct-2407-abliterated",
+      "ugi": 29.07,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/LLAMA-3_8B_Unaligned_BETA",
+      "ugi": 29.05,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "DavidAU/L3-MOE-8X8B-Dark-Planet-8D-Mirrored-Chaos-47B",
+      "ugi": 28.99,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/Phi-4-Model-Stock-v3",
+      "ugi": 28.97,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Irixium-12B-Model_Stock",
+      "ugi": 28.96,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/amoral-gemma3-12B",
+      "ugi": 28.95,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "invisietch/EtherealRainbow-v0.3-8B",
+      "ugi": 28.94,
+      "w10": 7.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "ReadyArt/Forgotten-Abomination-24B-v1.2",
+      "ugi": 28.87,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Twilight-SCE-12B",
+      "ugi": 28.84,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/inexpertus_1.1-8B-LINEAR",
+      "ugi": 28.75,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "FallenMerick/MN-Violet-Lotus-12B",
+      "ugi": 28.73,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DatToad/Chuluun-Qwen2.5-72B-v0.01",
+      "ugi": 28.71,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Francois-PE-V2",
+      "ugi": 28.62,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Undi95/MythoMax-L2-Kimiko-v2-13b",
+      "ugi": 28.6,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B-v2 (chatml)",
+      "ugi": 28.51,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/amoral-qwen3-14B (thinking=disabled)",
+      "ugi": 28.49,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mlabonne/NeuralDaredevil-8B-abliterated",
+      "ugi": 28.44,
+      "w10": 7.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "trashpanda-org/MS-24B-Mullein-v0",
+      "ugi": 28.43,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Schlock-8B-Model_Stock",
+      "ugi": 28.42,
+      "w10": 6.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "anthracite-org/magnum-v4-27b",
+      "ugi": 28.4,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/Pawdistic-Fur-Mittens-V0.1-24B",
+      "ugi": 28.36,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B (chatml)",
+      "ugi": 28.33,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bluuwhale/L3-SthenoMaid-8B-V1",
+      "ugi": 28.25,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/DigitalSoul-BlackSheep (alpaca)",
+      "ugi": 28.24,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Irida-SCE-9B",
+      "ugi": 28.24,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "redrix/AngelSlayer-12B-Unslop-Mell-RPMax-DARKNESS",
+      "ugi": 28.18,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "LatitudeGames/Wayfarer-12B",
+      "ugi": 28.18,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Hekate-Panopaia-12B",
+      "ugi": 28.18,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NousResearch/Hermes-2-Pro-Llama-3-8B",
+      "ugi": 28.17,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Shirayuki-SCE-9B",
+      "ugi": 28.16,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "openai/gpt-4o-mini-2024-07-18",
+      "ugi": 28.14,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "maldv/Qwentile2.5-32B-Instruct",
+      "ugi": 28.14,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/The-Omega-Directive-M-12B-v1.0",
+      "ugi": 28.09,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Amelia-SCE-12B",
+      "ugi": 28.05,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/amoral-gemma3-12B-v2",
+      "ugi": 28.05,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/mergekit-dare_ties-tpraytl",
+      "ugi": 28.05,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Wingless_Imp_8B",
+      "ugi": 28.03,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Qwen2.5-Coder-32B-Instruct-abliterated",
+      "ugi": 27.9,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allknowingroger/Gemmaslerp2-9B",
+      "ugi": 27.89,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/BaeZel-8B-LINEAR",
+      "ugi": 27.88,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "djuna/Q2.5-Veltha-14B-0.5",
+      "ugi": 27.85,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen9-gemma-2-9B",
+      "ugi": 27.81,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/MN-Dark-Planet-TITAN-12B",
+      "ugi": 27.8,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/H_the_eighth-8B-LINEAR",
+      "ugi": 27.79,
+      "w10": 7.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B-v3 (chatml)",
+      "ugi": 27.68,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/Mistral-Nemo-Instruct-2407",
+      "ugi": 27.66,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Rei-V3-KTO-12B",
+      "ugi": 27.65,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthracite-org/magnum-v4-72b",
+      "ugi": 27.47,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SanjiWatsuki/Kunoichi-DPO-v2-7B",
+      "ugi": 27.45,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Triangle104/Set-70b",
+      "ugi": 27.39,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Tiger-Gemma-9B-v1",
+      "ugi": 27.38,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "allenai/OLMo-2-0325-32B-Instruct",
+      "ugi": 27.36,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-Remix-9B",
+      "ugi": 27.28,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-Extra (chatml)",
+      "ugi": 27.24,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT5-Max-Merge_02012025163610-gemma-2-9B",
+      "ugi": 27.13,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MTMaMe-Merge_02012025163610-gemma-2-9B",
+      "ugi": 27.13,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o3-mini-2025-01-31 (reasoning_effort=high)",
+      "ugi": 27.1,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Gemmasutra-9B-v1",
+      "ugi": 27.08,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "yamatazen/ForgottenMaid-12B",
+      "ugi": 27.07,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/L3.1-Dark-Planet-SpinFire-Uncensored-8B",
+      "ugi": 27.06,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ChaoticNeutrals/Infinitely-Laydiculous-9B (alpaca)",
+      "ugi": 27.06,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Ephemeros-12B",
+      "ugi": 27.05,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/L3-8B-Lunaris-v1",
+      "ugi": 27.04,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Orihime-12B (mistral)",
+      "ugi": 27.04,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Accord-8B-Model_Stock",
+      "ugi": 27.03,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Hekate-Kleidoukhos-12B",
+      "ugi": 26.93,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MTMMe-Merge-gemma-2-9B",
+      "ugi": 26.93,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MTMMe-Merge-gemma-2-9B_NuSLERP",
+      "ugi": 26.93,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MTMMe-Merge-gemma-2-9B_NuSLERP_w0.7_0.3",
+      "ugi": 26.93,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MTMMe-Merge-gemma-2-9B_NuSLERP_w0.3_0.7",
+      "ugi": 26.93,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Sylvan_Lux-12B-LINEAR",
+      "ugi": 26.93,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "AELLM/gemma-2-aeria-infinity-9b",
+      "ugi": 26.9,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MTM-Merge-gemma-2-9B",
+      "ugi": 26.87,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/Veiled-Calla-12B",
+      "ugi": 26.87,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "intervitens/mini-magnum-12b-v1.1",
+      "ugi": 26.83,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-gemma-3-12B",
+      "ugi": 26.77,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "sophosympatheia/Nova-Tempus-70B-v0.3",
+      "ugi": 26.75,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B-Stock (mistral)",
+      "ugi": 26.74,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/The-Omega-Abomination-Gemma3-12B-v1.0",
+      "ugi": 26.69,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/saiga_gemma3_12b_sft_m1_d39_smpo_m1_d38-Q6_K-GGUF",
+      "ugi": 26.68,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/Sparkle-12B",
+      "ugi": 26.66,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-Max-Merge_02012025163610-gemma-2-9B",
+      "ugi": 26.65,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "redrix/GodSlayer-12B-ABYSS",
+      "ugi": 26.61,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "trashpanda-org/QwQ-32B-Snowdrop-v0",
+      "ugi": 26.6,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "recoilme/recoilme-gemma-2-9B-v0.2",
+      "ugi": 26.59,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen3-32B (thinking=disabled)",
+      "ugi": 26.54,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "inflatebot/MN-12B-Mag-Mell-R1",
+      "ugi": 26.52,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthropic/claude-3-5-haiku-20241022",
+      "ugi": 26.51,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/Fimbulvetr-11B-v2",
+      "ugi": 26.46,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Heart_Stolen-8B-Model_Stock",
+      "ugi": 26.45,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ohyeah1/Violet-Lyra-Gutenberg",
+      "ugi": 26.41,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen3-8B (thinking=disabled)",
+      "ugi": 26.28,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Elizezen/Himeyuri-v0.1-12B",
+      "ugi": 26.22,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NeverSleep/Lumimaid-v0.2-12B",
+      "ugi": 26.2,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Triangle104/Q2.5-32B-Tatewaki-Kunou",
+      "ugi": 26.07,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Epiculous/Violet_Twilight-v0.2",
+      "ugi": 26.04,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-v3b-9B",
+      "ugi": 26.03,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/recoilme-gemma-2-Ataraxy-9B-v0.1",
+      "ugi": 26.02,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen2-gemma-2-9B",
+      "ugi": 26.0,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/LLAMA-3_8B_Unaligned_Alpha_RP_Soup",
+      "ugi": 26.0,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT-Max-Merge_02012025163610-gemma-2-9B",
+      "ugi": 25.99,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+      "ugi": 25.94,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Undi95/Lumimaid-Magnum-v4-12B",
+      "ugi": 25.91,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/MN-GRAND-Gutenberg-Lyra4-Lyra-12B-MADNESS",
+      "ugi": 25.91,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Triangle104/Herodotos-14B",
+      "ugi": 25.88,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "ugi": 25.84,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/L3-GothicMaid-8B",
+      "ugi": 25.82,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "OddTheGreat/Meteor_4B_V.1",
+      "ugi": 25.79,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Orion-zhen/phi-4-abliterated",
+      "ugi": 25.79,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/Tigers-Abliterated-9B",
+      "ugi": 25.78,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NeverSleep/Lumimaid-v0.2-8B",
+      "ugi": 25.77,
+      "w10": 6.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "yamatazen/Himeyuri-Magnum-12B-v2",
+      "ugi": 25.71,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen6-gemma-2-9B",
+      "ugi": 25.69,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "jeffmeloy/Qwen2.5-7B-nerd-uncensored-v1.0",
+      "ugi": 25.69,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "redrix/patricide-12B-Unslop-Mell-v2",
+      "ugi": 25.64,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Hekate-Anassa-17B",
+      "ugi": 25.63,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "upstage/SOLAR-10.7B-Instruct-v1.0",
+      "ugi": 25.62,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bluuwhale/L3-SthenoMaidBlackroot-8B-V1",
+      "ugi": 25.62,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+      "ugi": 25.6,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Fallen-Gemma3-12B-v1",
+      "ugi": 25.56,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen8-gemma-2-9B",
+      "ugi": 25.51,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Nyx-Chthonia-12B",
+      "ugi": 25.51,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-Gen4-gemma-2-9B",
+      "ugi": 25.48,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B-Stock (chatml)",
+      "ugi": 25.48,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ToastyPigeon/gemma-3-27b-experiment-v2-merge-B",
+      "ugi": 25.47,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/UnslopNemo-12B-v2",
+      "ugi": 25.45,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2",
+      "ugi": 25.38,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "icefog72/IceDrunkenCherryRP-7b",
+      "ugi": 25.31,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DigitalSouls/BlackSheep-DigitalSoul-22B (mistral)",
+      "ugi": 25.3,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-Extra (mistral)",
+      "ugi": 25.29,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "anthropic/claude-3-opus-20240229",
+      "ugi": 25.22,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Francois-PE-12B",
+      "ugi": 25.2,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B (mistral)",
+      "ugi": 25.17,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "AIvel/AnotherOne-Unslop-Mell-12B",
+      "ugi": 25.15,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Qwen2.5-7B-Instruct-abliterated-v2",
+      "ugi": 25.11,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/MN-12B-Vespa-x1",
+      "ugi": 25.09,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SentientAGI/Dobby-Mini-Leashed-Llama-3.1-8B",
+      "ugi": 25.04,
+      "w10": 5.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "TheDrummer/Big-Alice-28B-v1",
+      "ugi": 25.04,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nbeerbower/BigKartoffel-mistral-nemo-20B",
+      "ugi": 25.03,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/HMS-Slerp-12B",
+      "ugi": 24.97,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/72B-Qwen2.5-Kunou-v1",
+      "ugi": 24.93,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SanjiWatsuki/Silicon-Maid-7B",
+      "ugi": 24.92,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "ugi": 24.89,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-v4-Advanced-9B",
+      "ugi": 24.86,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-16B (chatml)",
+      "ugi": 24.84,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Inv/Konstanta-Alpha-V2-7B",
+      "ugi": 24.72,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-Llama3.2-3B (llama-3)",
+      "ugi": 24.67,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TheDrummer/Moistral-11B-v3",
+      "ugi": 24.64,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sorawiz/MistralSmall-Creative-24B-Realist (chatml)",
+      "ugi": 24.64,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Triangle104/Hermes3-BlackSheep-3B",
+      "ugi": 24.59,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "yamatazen/EtherealLight-12B",
+      "ugi": 24.58,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT1-gemma-2-9B",
+      "ugi": 24.53,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT4-Gen5-gemma-2-9B",
+      "ugi": 24.51,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sicarius-Prototyping/X-Ray_Alpha_27B_Base",
+      "ugi": 24.44,
+      "w10": 5.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Aashraf995/Gemma-Evo-10B",
+      "ugi": 24.39,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-v4b-9B",
+      "ugi": 24.35,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SanjiWatsuki/Kunoichi-7B",
+      "ugi": 24.33,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SaisExperiments/Evil-Alpaca-3B-L3.2 (alpaca)",
+      "ugi": 24.29,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-v4a-Advanced-9B",
+      "ugi": 24.19,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Phi-Line_14B",
+      "ugi": 24.18,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Ohashi-NeMo-12B",
+      "ugi": 24.14,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned_SLERP",
+      "ugi": 24.13,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "OddTheGreat/Planetoid_27B_V.2",
+      "ugi": 24.05,
+      "w10": 3.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TheDrummer/UnslopNemo-12B-v4.1",
+      "ugi": 24.02,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/FlickeringLight-14B",
+      "ugi": 24.02,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "vicgalle/Configurable-Llama-3.1-8B-Instruct",
+      "ugi": 24.02,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheMindExpansionNetwork/M1NDB0T-0M3G4-29B_FLOAT16",
+      "ugi": 24.0,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Gemmasutra-Pro-27B-v1.1",
+      "ugi": 23.97,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Kaoeiri/MS-Magpantheonsel-lark-v4x1.6.2RP-Cydonia-vXXX-22B-8.05",
+      "ugi": 23.92,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "IlyaGusev/gemma-2-2b-it-abliterated",
+      "ugi": 23.91,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "soob3123/amoral-gemma3-12B-v2-qat",
+      "ugi": 23.91,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Hamzah-Asadullah/GenericRPV1-7B",
+      "ugi": 23.82,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/Veritas-12B",
+      "ugi": 23.79,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mistralai/Ministral-8B-Instruct-2410",
+      "ugi": 23.78,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen3-30B-A3B (thinking=disabled)",
+      "ugi": 23.72,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/EerieLight-21B",
+      "ugi": 23.71,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "grimjim/Magnolia-v3-Gemma2-8k-9B",
+      "ugi": 23.67,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "grimjim/Magnolia-v2-Gemma2-8k-9B",
+      "ugi": 23.67,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Nitral-AI/Captain_Eris_Noctis-12B-v0.420",
+      "ugi": 23.65,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nidum/Nidum-Gemma-3-27B-it-Uncensored",
+      "ugi": 23.61,
+      "w10": 5.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "icefog72/IceNalyvkaRP-7b",
+      "ugi": 23.58,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/EXAONE-3.5-7.8B-Instruct-abliterated",
+      "ugi": 23.55,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-v3-Advanced-9B",
+      "ugi": 23.54,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemma-3-12b-it",
+      "ugi": 23.51,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "HarbingerX/Zeitgeist-3b-V1",
+      "ugi": 23.5,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Disya/L3-2x8B-Test",
+      "ugi": 23.49,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sao10K/MN-12B-Lyra-v4",
+      "ugi": 23.32,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "OddTheGreat/Comet_12B_V.5",
+      "ugi": 23.31,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Rivermind-12B-v1",
+      "ugi": 23.3,
+      "w10": 4.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "Nitral-AI/Violet_Magcap-12B",
+      "ugi": 23.3,
+      "w10": 8.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NousResearch/Nous-Hermes-2-Mistral-7B-DPO",
+      "ugi": 23.25,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Rocinante-12B-v1.1",
+      "ugi": 23.16,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Gemma2-BlueMoon-9B",
+      "ugi": 23.1,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allknowingroger/Gemmaslerp-9B",
+      "ugi": 23.05,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "rombodawg/Rombos-LLM-V2.5-Qwen-7b",
+      "ugi": 23.03,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "newsbang/Homer-v1.0-Qwen2.5-72B",
+      "ugi": 23.02,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "spow12/ChatWaifu_12B_v2.0",
+      "ugi": 23.0,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Casual-Autopsy/L3-Umbral-Mind-RP-v3.0-8B",
+      "ugi": 22.98,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "speakleash/Bielik-11B-v2.3-Instruct",
+      "ugi": 22.92,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "cgato/Nemo-12b-Humanize-KTO-Experimental-2",
+      "ugi": 22.9,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/Phi-4-Model-Stock-v2",
+      "ugi": 22.84,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/MN-Hecate-Chthonia-12B",
+      "ugi": 22.82,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/Gemma-The-Writer-N-Restless-Quill-10B-Uncensored",
+      "ugi": 22.81,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "openai/o3-mini-2025-01-31 (reasoning_effort=low)",
+      "ugi": 22.8,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SaisExperiments/Evil-Alpaca-Right-Lean-L3.2-3B",
+      "ugi": 22.78,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Vikhrmodels/Vikhr-7B-instruct_0.2",
+      "ugi": 22.78,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DigitalSouls/BlackSheep-DigitalSoul-22B (alpaca)",
+      "ugi": 22.77,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "ugi": 22.73,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ifable/gemma-2-Ifable-9B",
+      "ugi": 22.73,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DreadPoor/Derivative-8B-Model_Stock",
+      "ugi": 22.72,
+      "w10": 4.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "soob3123/amoral-gemma3-4B",
+      "ugi": 22.7,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2",
+      "ugi": 22.68,
+      "w10": 2.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "rombodawg/Rombos-LLM-V2.5-Qwen-72b",
+      "ugi": 22.65,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "crestf411/gemma2-9B-sunfall-v0.5.2",
+      "ugi": 22.65,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "InferenceIllusionist/M7-Evil-7b",
+      "ugi": 22.59,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "FPHam/L3-8B-Everything-COT",
+      "ugi": 22.58,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/La_Mejor_Mezcla-3.2-1B",
+      "ugi": 22.57,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "ugi": 22.54,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "mistralai/Codestral-22B-v0.1",
+      "ugi": 22.53,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Nexusflow/Athene-V2-Chat",
+      "ugi": 22.51,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Phi-lthy4",
+      "ugi": 22.38,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "shuttleai/shuttle-3",
+      "ugi": 22.36,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/Veiled-Calla-4B",
+      "ugi": 22.33,
+      "w10": 8.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/L3-DARKEST-PLANET-16.5B",
+      "ugi": 22.32,
+      "w10": 5.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "nbeerbower/mistral-nemo-gutenberg-12B-v4",
+      "ugi": 22.3,
+      "w10": 5.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-v4c-9B",
+      "ugi": 22.26,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT4-Gen2-gemma-2-9B",
+      "ugi": 22.25,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/Phi-4-Model-Stock-v4",
+      "ugi": 22.19,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "darkc0de/BuddyGlassAmpedUncensoredGGUF",
+      "ugi": 22.05,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
+      "ugi": 22.05,
+      "w10": 1.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "elinas/Chronos-Gold-12B-1.0",
+      "ugi": 22.01,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Himeyuri-Magnum-12B",
+      "ugi": 22.01,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "shisa-ai/shisa-v2-mistral-nemo-12b",
+      "ugi": 21.95,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/Llama-3.2-3B-Mix-Skill",
+      "ugi": 21.94,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Epiculous/Crimson_Dawn-v0.2",
+      "ugi": 21.93,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "prithivMLmods/Viper-Coder-HybridMini-v1.3",
+      "ugi": 21.88,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "FuseAI/FuseChat-Llama-3.2-3B-Instruct",
+      "ugi": 21.84,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT4-gemma-3-12B",
+      "ugi": 21.83,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/Pandemonium-3.2-1B",
+      "ugi": 21.82,
+      "w10": 7.5,
+      "ideology": "Social Democracy"
+    },
+    {
+      "model": "Qwen/Qwen3-4B (thinking=disabled)",
+      "ugi": 21.82,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Otakadelic/phi-4-abliterated-Orion-18B",
+      "ugi": 21.82,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "meta-llama/Llama-3.1-70B-Instruct",
+      "ugi": 21.68,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-Qwen-14B",
+      "ugi": 21.61,
+      "w10": 5.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "huihui-ai/Qwen2.5-7B-Instruct-1M-abliterated",
+      "ugi": 21.61,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "microsoft/phi-4",
+      "ugi": 21.59,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "lemon07r/Gemma-2-Ataraxy-v4d-9B",
+      "ugi": 21.56,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "gmonsoon/SahabatAI-Lion-9B-TIES-v1",
+      "ugi": 21.54,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "GoToCompany/gemma2-9b-cpt-sahabatai-v1-instruct",
+      "ugi": 21.54,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Fallen-Gemma3-4B-v1",
+      "ugi": 21.5,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "BeaverAI/Gemmasutra-Mini-2B-v2aa-GGUF",
+      "ugi": 21.44,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "ChaoticNeutrals/Infinitely-Laydiculous-9B (vicuna)",
+      "ugi": 21.44,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/Forgotten-Safeword-8B-V3.0",
+      "ugi": 21.43,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT2-gemma-3-12B",
+      "ugi": 21.43,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "huihui-ai/gemma-3-12b-it-abliterated",
+      "ugi": 21.33,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned",
+      "ugi": 21.29,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/Llama-3.2-3B-Sci-Think",
+      "ugi": 21.29,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/X-Ray_Alpha",
+      "ugi": 21.27,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Inv/Konstanta-7B",
+      "ugi": 21.18,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/2B-ad",
+      "ugi": 21.14,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "chuanli11/Llama-3.2-3B-Instruct-uncensored",
+      "ugi": 21.04,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Tenebra_30B_Alpha01_FP16",
+      "ugi": 20.99,
+      "w10": 6.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "win10/EVA-QwQ-32B-Preview",
+      "ugi": 20.98,
+      "w10": 2.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "Nitral-AI/Nera_Noctis-12B",
+      "ugi": 20.94,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Nitral-AI/Captain_BMO-12B",
+      "ugi": 20.85,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "EpistemeAI/Mistral-Nemo-Instruct-12B-Philosophy-Math",
+      "ugi": 20.85,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/Amoral-Fallen-Omega-Gemma3-12B",
+      "ugi": 20.85,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "zelk12/MT3-gemma-3-12B",
+      "ugi": 20.82,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "spacematt/gemma-2-9B-it-blend",
+      "ugi": 20.73,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "cognitivecomputations/Dolphin3.0-Llama3.1-8B",
+      "ugi": 20.72,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "grimjim/Magot-v2-Gemma2-8k-9B",
+      "ugi": 20.72,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "darkc0de/BuddyGlassUncensored2025.2",
+      "ugi": 20.69,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/FuseChat-3.2-1B-Creative-RP",
+      "ugi": 20.69,
+      "w10": 7.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "some1nostr/Nostr-Llama-3.1-8B",
+      "ugi": 20.68,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Sorawiz/MistralSmall-Creative-24B-Realist (mistral - V7-Tekken)",
+      "ugi": 20.62,
+      "w10": 8.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "grimjim/Gigantes-v3-gemma2-9b-it",
+      "ugi": 20.59,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/Gemma2-9B-TitanFusion",
+      "ugi": 20.49,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Undi95/Phi4-abliterated",
+      "ugi": 20.4,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "OddTheGreat/Comet_12B_V.4",
+      "ugi": 20.38,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NeverSleep/Noromaid-v0.1-mixtral-8x7b-Instruct-v3",
+      "ugi": 20.35,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen3-1.7B (thinking=disabled)",
+      "ugi": 20.34,
+      "w10": 7.0,
+      "ideology": "Technocracy"
+    },
+    {
+      "model": "soob3123/GrayLine-Gemma3-12B",
+      "ugi": 20.27,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-16B (mistral)",
+      "ugi": 20.22,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/Judas-The-Uncensored-3.2-1B",
+      "ugi": 20.18,
+      "w10": 7.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allenai/OLMo-2-1124-13B-Instruct",
+      "ugi": 20.18,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "brianmatzelle/llama3.1-8b-instruct-hasanpiker-abliterated",
+      "ugi": 20.16,
+      "w10": 5.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-Llama3.2-3B (alpaca)",
+      "ugi": 20.14,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "allknowingroger/GemmaSlerp5-10B",
+      "ugi": 20.12,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Rocinante-12B-v1",
+      "ugi": 20.04,
+      "w10": 5.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "huihui-ai/Falcon3-10B-Instruct-abliterated",
+      "ugi": 20.02,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Oni_Mitsubishi_12B",
+      "ugi": 19.98,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "FuseAI/FuseChat-Llama-3.2-1B-Instruct",
+      "ugi": 19.91,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allura-org/G2-9B-Aletheia-v1",
+      "ugi": 19.91,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sicarius-Prototyping/Impish_LLAMA_6.84B",
+      "ugi": 19.88,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "mukaj/Llama-3.1-Hawkish-8B",
+      "ugi": 19.8,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "djuna/Gemma-2-gemmama-9b",
+      "ugi": 19.73,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nvidia/AceInstruct-72B",
+      "ugi": 19.72,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/Blasphemia-3.2-1B",
+      "ugi": 19.72,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Mantis2024/Gemma-3-Glitter-4B-Uncensored",
+      "ugi": 19.72,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+      "ugi": 19.68,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Sorawiz/Gemma-9B-Base",
+      "ugi": 19.68,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "UCLA-AGI/Gemma-2-9B-It-SPPO-Iter2",
+      "ugi": 19.6,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Theia-21B-v2",
+      "ugi": 19.59,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "UCLA-AGI/Gemma-2-9B-It-SPPO-Iter1",
+      "ugi": 19.58,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemma-2-27b-it",
+      "ugi": 19.52,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mradermacher/SmallMistralThinker-v1.1-GGUF",
+      "ugi": 19.49,
+      "w10": 5.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "IlyaGusev/saiga_gemma3_12b_sft_m1",
+      "ugi": 19.48,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allura-org/G2-9B-Sugarquill-v0",
+      "ugi": 19.45,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Tinybra_13B",
+      "ugi": 19.4,
+      "w10": 7.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "recoilme/recoilme-gemma-2-9B-v0.3",
+      "ugi": 19.33,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen3-0.6B (thinking=disabled)",
+      "ugi": 19.28,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allknowingroger/Gemmaslerp4-10B",
+      "ugi": 19.26,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "BenevolenceMessiah/Qwen2.5-Coder-32B-Instruct-abliterated-Rombo-TIES-v1.0",
+      "ugi": 19.23,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-14B-Instruct",
+      "ugi": 19.23,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/EXAONE-3.5-2.4B-Instruct-abliterated",
+      "ugi": 19.2,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "ReadyArt/Omega-Darker_The-Final-Directive-12B",
+      "ugi": 19.2,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/GrayLine-Qwen3-8B (thinking=disabled)",
+      "ugi": 19.13,
+      "w10": 4.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "yamatazen/KunoichiFusion-7B",
+      "ugi": 19.12,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Triangle104/Gemmadevi-Stock-10B",
+      "ugi": 19.09,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "BeaverAI/Fallen-Gemma3-4B-v1a-GGUF",
+      "ugi": 18.98,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Aratako/Vecteus-v1-toxic",
+      "ugi": 18.98,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/EMO_SEX_V2-3.2-1B",
+      "ugi": 18.97,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "ugi": 18.88,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nothingiisreal/MN-12B-Celeste-V1.9",
+      "ugi": 18.88,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Spestly/Athena-1-7B",
+      "ugi": 18.81,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Phi-3.5-mini-instruct_Uncensored",
+      "ugi": 18.79,
+      "w10": 6.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "sam-paech/Darkest-muse-v1",
+      "ugi": 18.68,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/Gemma-The-Writer-Mighty-Sword-9B",
+      "ugi": 18.55,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "meta-llama/Llama-3.1-405B-Instruct",
+      "ugi": 18.48,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Hamanasu-15B-Instruct",
+      "ugi": 18.47,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "UCLA-AGI/Gemma-2-9B-It-SPPO-Iter3",
+      "ugi": 18.47,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-Mistral-RP-7B (alpaca)",
+      "ugi": 18.4,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "lunahr/Hermes-3-Llama-3.2-3B-abliterated",
+      "ugi": 18.36,
+      "w10": 6.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "grimjim/Daichi-Instructed-12B",
+      "ugi": 18.35,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ToastyPigeon/g3-12b-multimerge-test",
+      "ugi": 18.33,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/mergekit-slerp-xbklfzn",
+      "ugi": 18.33,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mergekit-community/mergekit-dare_ties-neobneo",
+      "ugi": 18.33,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/StarrySky-12B",
+      "ugi": 18.2,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Valkyrie-49B-v1",
+      "ugi": 18.19,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/BLAST_PROCESSING-3.2-1B",
+      "ugi": 18.14,
+      "w10": 5.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Pseudomartys-3.2-1B",
+      "ugi": 18.14,
+      "w10": 5.5,
+      "ideology": "Social Democracy"
+    },
+    {
+      "model": "Delta-Vector/Daichi-12B",
+      "ugi": 18.13,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "ugi": 18.1,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "cognitivecomputations/Dolphin3.0-Llama3.2-1B",
+      "ugi": 18.06,
+      "w10": 8.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Euridice-3.2-1B",
+      "ugi": 17.92,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "nbeerbower/Gemma2-Gutenberg-Doppel-9B",
+      "ugi": 17.91,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "NewEden/Honeyfeed-LN-merge",
+      "ugi": 17.91,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "internlm/internlm3-8b-instruct",
+      "ugi": 17.84,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "01-ai/Yi-Coder-9B-Chat",
+      "ugi": 17.83,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ToastyPigeon/Gemma-3-Starshine-12B",
+      "ugi": 17.82,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "mlabonne/Hermes-3-Llama-3.1-8B-lorablated",
+      "ugi": 17.8,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Pascal-Base-12B",
+      "ugi": 17.75,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Eximius_Persona_5B",
+      "ugi": 17.68,
+      "w10": 5.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "BeaverAI/Pocket-Tiger-Gemma-2B-v1f-GGUF",
+      "ugi": 17.61,
+      "w10": 5.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-4B",
+      "ugi": 17.61,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Impish_QWEN_7B-1M",
+      "ugi": 17.59,
+      "w10": 4.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "openai/gpt-4.1-nano-2025-04-14",
+      "ugi": 17.47,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Undi95/Llama-3-Unholy-8B",
+      "ugi": 17.33,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "grimjim/Gigantes-v1-gemma2-9b-it",
+      "ugi": 17.32,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allenai/OLMo-2-1124-7B-Instruct",
+      "ugi": 17.25,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/CodeQwen1.5-7B-Chat",
+      "ugi": 17.23,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "maywell/PiVoT-0.1-Evil-a",
+      "ugi": 17.18,
+      "w10": 3.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "yamatazen/L3-GothicMaid-Upscaled-11B",
+      "ugi": 17.17,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Pascal-12B",
+      "ugi": 17.12,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nhyha/N3N_gemma-2-9b-it_20241029_1532",
+      "ugi": 17.09,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemma-2-9b-it",
+      "ugi": 17.08,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Impish_LLAMA_3B",
+      "ugi": 17.04,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "DavidAU/Llama-3.2-4X3B-MOE-Hell-California-10B",
+      "ugi": 17.01,
+      "w10": 5.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Goekdeniz-Guelmez/Josiefied-Qwen3-4B-abliterated-v1 (thinking=disabled)",
+      "ugi": 16.99,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ReadyArt/The-Omega-Directive-Gemma3-12B-v1.0",
+      "ugi": 16.93,
+      "w10": 7.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "theprint/ReWiz-Llama-3.2-3B",
+      "ugi": 16.88,
+      "w10": 3.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "ehristoforu/Gemma2-9B-it-psy10k-mental_health",
+      "ugi": 16.83,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "georgeck/Hacker-News-Comments-Summarization-Llama-3.1-8B-Instruct",
+      "ugi": 16.69,
+      "w10": 1.5,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "AXCXEPT/EZO-Humanities-9B-gemma-2-it",
+      "ugi": 16.53,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "AXCXEPT/EZO-Common-9B-gemma-2-it",
+      "ugi": 16.51,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.2",
+      "ugi": 16.33,
+      "w10": 5.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/Cultist-3.2-1B",
+      "ugi": 16.33,
+      "w10": 5.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "jtatman/llama-3.2-1b-lewd-mental-occult",
+      "ugi": 16.33,
+      "w10": 5.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "luvGPT/phi3-uncensored-chat",
+      "ugi": 16.17,
+      "w10": 4.5,
+      "ideology": "Social Democracy"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-Large (mistral)",
+      "ugi": 16.02,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-Large (alpaca)",
+      "ugi": 15.97,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Vikhrmodels/Vikhr-YandexGPT-5-Lite-8B-it",
+      "ugi": 15.97,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "allura-org/Gemma-3-Glitter-4B",
+      "ugi": 15.9,
+      "w10": 4.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "ugi": 15.86,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "bunnycore/Llama-3.2-3B-Pure-RP",
+      "ugi": 15.84,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "TroyDoesAI/BlackSheep-Mistral-RP-7B (mistral)",
+      "ugi": 15.8,
+      "w10": 6.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Aurora-SCE-12B-v2",
+      "ugi": 15.66,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/ASTAROTH-3.2-1B",
+      "ugi": 15.66,
+      "w10": 5.0,
+      "ideology": "Social Democracy"
+    },
+    {
+      "model": "SicariusSicariiStuff/Fiendish_LLAMA_3B",
+      "ugi": 15.65,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "arcee-ai/Llama-3.1-SuperNova-Lite",
+      "ugi": 15.43,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Open-Reasoner-Zero/Open-Reasoner-Zero-7B",
+      "ugi": 15.35,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "UUFO-Aigis/Magnum-1b-v1",
+      "ugi": 15.29,
+      "w10": 5.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "THUDM/codegeex4-all-9b",
+      "ugi": 15.26,
+      "w10": 4.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "MoonRide/Llama-3.2-3B-Khelavaster",
+      "ugi": 15.05,
+      "w10": 5.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Nexesenex/Dolphin3.0-Llama3.1-1B-abliterated",
+      "ugi": 14.45,
+      "w10": 6.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Morgana-3.2-1B",
+      "ugi": 14.27,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "ugi": 13.9,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "yamatazen/Ayla-Light-12B-v3 (mistral)",
+      "ugi": 13.83,
+      "w10": 2.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "QomSSLab/Gemma3-Rhino-27B-RAG",
+      "ugi": 13.69,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Delta-Vector/Hamanasu-15B-Adventure",
+      "ugi": 13.57,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "TheDrummer/Gemmasutra-Small-4B-v1",
+      "ugi": 13.54,
+      "w10": 5.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Local-Novel-LLM-project/Vecteus-v1",
+      "ugi": 13.41,
+      "w10": 4.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "xdrshjr/llama3.2_1b_uncensored_5000_8epoch_lora",
+      "ugi": 13.32,
+      "w10": 5.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "tiiuae/Falcon3-10B-Instruct",
+      "ugi": 13.15,
+      "w10": 2.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/Llama-3.2-1B-Instruct-abliterated",
+      "ugi": 13.14,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "ehristoforu/Gemma2-9b-it-train6",
+      "ugi": 12.97,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Vikhrmodels/gemma3-vikhr-4b",
+      "ugi": 12.94,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/Telkhine-3.2-1B",
+      "ugi": 12.87,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "SaisExperiments/Evil-Alpaca-3B-L3.2 (llama-3)",
+      "ugi": 12.78,
+      "w10": 2.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "huihui-ai/Llama-3.2-3B-Instruct-abliterated",
+      "ugi": 12.7,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Nexesenex/Llama_3.2_1b_SunOrca_V1",
+      "ugi": 12.7,
+      "w10": 2.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Hamzah-Asadullah/GenericRPV2-4B",
+      "ugi": 12.7,
+      "w10": 4.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "nidum/Nidum-Gemma-3-4B-it-Uncensored",
+      "ugi": 12.57,
+      "w10": 5.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "Novaciano/Harpy-3.2-1B",
+      "ugi": 12.49,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "prithivMLmods/GWQ-9B-Preview2",
+      "ugi": 12.2,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Nano_Imp_1B",
+      "ugi": 12.18,
+      "w10": 5.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "Novaciano/SibilaDeCumas-1.1B",
+      "ugi": 12.17,
+      "w10": 5.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/BAHAMUTH-PURGED-3.2-1B",
+      "ugi": 12.11,
+      "w10": 2.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/HarmfulProject-3.2-1B",
+      "ugi": 12.1,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "meta-llama/Llama-2-70b-chat-hf",
+      "ugi": 12.05,
+      "w10": 0.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Vikhrmodels/Vikhr-Gemma-2B-instruct",
+      "ugi": 12.02,
+      "w10": 2.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "CarrotAI/Llama-3.2-Rabbit-Ko-1B-Instruct",
+      "ugi": 11.95,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "prithivMLmods/GWQ-9B-Preview",
+      "ugi": 11.87,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/LEWD-Mental-Cultist-3.2-1B",
+      "ugi": 11.73,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Hamzah-Asadullah/GenericRPV3-4B",
+      "ugi": 11.72,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+      "ugi": 11.68,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "cyberagent/Mistral-Nemo-Japanese-Instruct-2408",
+      "ugi": 11.57,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "ugi": 11.51,
+      "w10": 3.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "ugi": 11.48,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/Cerberus-3.2-1B",
+      "ugi": 11.43,
+      "w10": 3.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Sphynx-3.2-1B",
+      "ugi": 11.43,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "soob3123/GrayLine-Gemma3-4B",
+      "ugi": 11.27,
+      "w10": 3.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "SicariusSicariiStuff/Winged_Imp_8B",
+      "ugi": 11.2,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/Sigil-Of-Satan-3.2-1B",
+      "ugi": 11.15,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "DreadPoor/Baked_Egglet-2B-Model_Stock",
+      "ugi": 11.15,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "google/gemma-3-1b-it",
+      "ugi": 11.13,
+      "w10": 3.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "huihui-ai/gemma-3-1b-it-abliterated",
+      "ugi": 11.06,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Belphegor-3.2-1B",
+      "ugi": 11.06,
+      "w10": 3.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/UNCENSORED-Kobold-1.1B",
+      "ugi": 11.05,
+      "w10": 4.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+      "ugi": 10.99,
+      "w10": 2.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+      "ugi": 10.84,
+      "w10": 4.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "cjvt/GaMS-27B",
+      "ugi": 10.82,
+      "w10": 3.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "pankajmathur/orca_mini_phi-4",
+      "ugi": 10.8,
+      "w10": 1.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Vikhrmodels/QVikhr-2.5-1.5B-Instruct-r",
+      "ugi": 10.27,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+      "ugi": 10.23,
+      "w10": 2.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "jtatman/llama-3.2-1b-trismegistus",
+      "ugi": 10.16,
+      "w10": 4.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "brianmatzelle/llama3.1-8b-instruct-political-subreddits",
+      "ugi": 9.82,
+      "w10": 3.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "ToastyPigeon/g3-12b-storyteller-v0.1-epoch1",
+      "ugi": 9.6,
+      "w10": 1.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B",
+      "ugi": 9.54,
+      "w10": 2.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "AiAF/Pretrained-SCP-1B-QLoRA",
+      "ugi": 9.48,
+      "w10": 2.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "SicariusSicariiStuff/2B_or_not_2B",
+      "ugi": 9.03,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Argos-3.2-1B",
+      "ugi": 9.03,
+      "w10": 4.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "danieliuspodb/llama-3.2-1b-extremist4",
+      "ugi": 9.03,
+      "w10": 4.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "NickyNicky/Llama-1B-GRPO_Final",
+      "ugi": 8.94,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Azhdaar-3.2-1B",
+      "ugi": 8.89,
+      "w10": 2.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "nicoboss/Llama-3.2-1B-Instruct-Uncensored",
+      "ugi": 8.8,
+      "w10": 3.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "huihui-ai/MicroThinker-1B-Preview",
+      "ugi": 8.8,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Sapo-3.2-1B",
+      "ugi": 8.8,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "brianmatzelle/llama3.2-1b-instruct-hasanpiker-abliterated",
+      "ugi": 8.79,
+      "w10": 3.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "meta-llama/Llama-3.2-1B-Instruct",
+      "ugi": 8.72,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Eurinome-3.2-1B",
+      "ugi": 8.7,
+      "w10": 3.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Qwen2.5-1.5B-Uncensored_Neurotic_Spanish",
+      "ugi": 8.58,
+      "w10": 3.0,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "meditsolutions/Llama-3.2-SUN-1B-chat",
+      "ugi": 8.34,
+      "w10": 2.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "empathielabs/Llama-3.2-1B-Instruct-A-emo",
+      "ugi": 7.89,
+      "w10": 1.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "prithivMLmods/Llama-Express.1-Math",
+      "ugi": 7.88,
+      "w10": 1.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Qwen/QwQ-32B-Preview",
+      "ugi": 7.67,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "Novaciano/BAPHOMET",
+      "ugi": 7.67,
+      "w10": 1.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "google/gemma-2-2b-it",
+      "ugi": 7.66,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "georgeck/Hacker-News-Comments-Summarization-Llama-3.2-3B-Instruct",
+      "ugi": 7.6,
+      "w10": 0.5,
+      "ideology": "Liberalism"
+    },
+    {
+      "model": "DeepAuto-AI/Explore_Llama-3.2-1B-Inst_v1.1",
+      "ugi": 7.59,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "ugi": 7.45,
+      "w10": 1.0,
+      "ideology": "Classical Liberalism"
+    },
+    {
+      "model": "Novaciano/MorganLeFai-3.2-1B",
+      "ugi": 7.38,
+      "w10": 1.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Djinn-3.2-1B",
+      "ugi": 6.93,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "qingy2024/Benchmaxx-Llama-3.2-1B-Instruct",
+      "ugi": 6.77,
+      "w10": 3.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "Novaciano/YOD",
+      "ugi": 6.77,
+      "w10": 3.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "infly/OpenCoder-8B-Instruct",
+      "ugi": 6.32,
+      "w10": 1.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "KidIkaros/Llama-3.2-1B-Instruct-abliterated",
+      "ugi": 5.59,
+      "w10": 1.5,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Novaciano/Ahriman-3.2-1B",
+      "ugi": 5.5,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "XeTute/HamzahLMV1-1B",
+      "ugi": 5.49,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "kavonalds/Lancer-1-1b-Instruct",
+      "ugi": 5.4,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "Grogros/dmWM-llama-3.2-1B-Instruct-HarmData-Al4-OWT-d6-a0.16-v2",
+      "ugi": 5.2,
+      "w10": 0.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "bunnycore/Llama-3.2-1B-Creative-Lora",
+      "ugi": 4.51,
+      "w10": 2.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "ugi": 4.44,
+      "w10": 1.0,
+      "ideology": "Centrism"
+    },
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "ugi": 4.29,
+      "w10": 1.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "Kaoeiri/MS-MagpantheonselRP-22B-12.22-Fictional",
+      "ugi": 3.39,
+      "w10": 1.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "XeTute/Medic-1B",
+      "ugi": 3.39,
+      "w10": 1.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "Kaoeiri/MS-MagpantheonselRP-22B-11.1",
+      "ugi": 2.26,
+      "w10": 0.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "danieliuspodb/llama-3.2-extremist2",
+      "ugi": 2.26,
+      "w10": 1.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "passing2961/Thanos-1B",
+      "ugi": 2.26,
+      "w10": 0.5,
+      "ideology": "NA"
+    },
+    {
+      "model": "invisietch/MiS-Firefly-v0.1-22B",
+      "ugi": 1.13,
+      "w10": 0.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "meta-llama/CodeLlama-70b-Instruct-hf",
+      "ugi": 0.0,
+      "w10": 0.0,
+      "ideology": "NA"
+    },
+    {
+      "model": "ArliAI/Mistral-Nemo-12B-ArliAI-RPMax-v1.3",
+      "ugi": 0.0,
+      "w10": 0.0,
+      "ideology": "NA"
+    }
+  ]
+}

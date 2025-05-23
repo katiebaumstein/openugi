@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenUGI - Uncensored General Intelligence Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 OpenUGI Leaderboard</h1>
+            <p class="subtitle">Tracking Uncensored General Intelligence in AI Models</p>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Models</h3>
+                <p class="stat-value" id="total-models">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>Top UGI Score</h3>
+                <p class="stat-value" id="top-ugi">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>Last Updated</h3>
+                <p class="stat-value" id="last-updated">-</p>
+            </div>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search models..." class="search-input">
+            <select id="ideology-filter" class="filter-select">
+                <option value="">All Ideologies</option>
+            </select>
+            <select id="sort-by" class="filter-select">
+                <option value="ugi-desc">UGI Score ↓</option>
+                <option value="ugi-asc">UGI Score ↑</option>
+                <option value="w10-desc">W/10 Score ↓</option>
+                <option value="w10-asc">W/10 Score ↑</option>
+            </select>
+        </div>
+
+        <div class="leaderboard">
+            <table id="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Model</th>
+                        <th>UGI Score</th>
+                        <th>W/10 Score</th>
+                        <th>Ideology</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body">
+                    <tr>
+                        <td colspan="5" class="loading">Loading leaderboard data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Data sourced from <a href="https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard" target="_blank">UGI Leaderboard</a> on Hugging Face</p>
+            <p>UGI measures model knowledge of uncensored information | W/10 measures willingness to answer (0-10)</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "openugi",
+  "version": "1.0.0",
+  "description": "OpenUGI - Uncensored General Intelligence Leaderboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 server.py",
+    "fetch-data": "python3 fetch_data.py",
+    "dev": "python3 server.py"
+  },
+  "keywords": [
+    "ugi",
+    "ai",
+    "leaderboard",
+    "uncensored",
+    "intelligence"
+  ],
+  "author": "",
+  "license": "MIT"
+}
