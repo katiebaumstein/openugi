@@ -37,6 +37,19 @@ function updateStats() {
     }
 }
 
+// Add smooth scroll for internal links
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
+
 function populateIdeologyFilter() {
     const ideologies = [...new Set(leaderboardData.map(d => d.ideology))];
     const select = document.getElementById('ideology-filter');
@@ -49,18 +62,107 @@ function populateIdeologyFilter() {
     });
 }
 
+function getModelUrl(modelName) {
+    // Extract provider and model name
+    const parts = modelName.split('/');
+    if (parts.length < 2) return null;
+    
+    const provider = parts[0].toLowerCase();
+    const model = parts.slice(1).join('/');
+    
+    // Remove "(no longer available)" suffix if present
+    const cleanModel = model.replace(/\s*\(no longer available\)\s*$/i, '');
+    
+    // Map providers to their URLs
+    const providerUrls = {
+        'openai': `https://platform.openai.com/docs/models/${cleanModel}`,
+        'anthropic': `https://www.anthropic.com/claude`,
+        'google': `https://ai.google.dev/gemini-api/docs/models/gemini`,
+        'meta-llama': `https://huggingface.co/${modelName}`,
+        'mistralai': `https://huggingface.co/${modelName}`,
+        'microsoft': `https://huggingface.co/${modelName}`,
+        'nousresearch': `https://huggingface.co/${modelName}`,
+        'xai': 'https://x.ai/blog',
+        'cohere': `https://huggingface.co/${modelName}`,
+        'allenai': `https://huggingface.co/${modelName}`,
+        'databricks': `https://huggingface.co/${modelName}`,
+        'deepseek-ai': `https://huggingface.co/${modelName}`,
+        'qwen': `https://huggingface.co/${modelName}`,
+        'tiiuae': `https://huggingface.co/${modelName}`,
+        '01-ai': `https://huggingface.co/${modelName}`,
+        'nicoboss': `https://huggingface.co/${modelName}`,
+        'juvi21': `https://huggingface.co/${modelName}`,
+        'concedo': `https://huggingface.co/${modelName}`,
+        'nvidia': `https://huggingface.co/${modelName}`,
+        'cognitivecomputations': `https://huggingface.co/${modelName}`,
+        'trollek': `https://huggingface.co/${modelName}`,
+        'berkeleygpt': `https://huggingface.co/${modelName}`,
+        'togethercomputer': `https://huggingface.co/${modelName}`,
+        'stabilityai': `https://huggingface.co/${modelName}`,
+        'bigscience': `https://huggingface.co/${modelName}`,
+        'eleutherai': `https://huggingface.co/${modelName}`,
+        'facebook': `https://huggingface.co/${modelName}`,
+        'gpt2': `https://huggingface.co/${modelName}`,
+        'bert': `https://huggingface.co/${modelName}`,
+        'roberta': `https://huggingface.co/${modelName}`,
+        'xlnet': `https://huggingface.co/${modelName}`,
+        'albert': `https://huggingface.co/${modelName}`,
+        'electra': `https://huggingface.co/${modelName}`,
+        'distilbert': `https://huggingface.co/${modelName}`,
+        'mosaicml': `https://huggingface.co/${modelName}`,
+        'salesforce': `https://huggingface.co/${modelName}`,
+        'laion': `https://huggingface.co/${modelName}`,
+        'writer': `https://huggingface.co/${modelName}`,
+        'h2o': `https://huggingface.co/${modelName}`,
+        'alephbeta': `https://huggingface.co/${modelName}`,
+        'stanford': `https://huggingface.co/${modelName}`,
+        'amazon': `https://huggingface.co/${modelName}`,
+        'ai21labs': `https://huggingface.co/${modelName}`,
+        'adept': `https://huggingface.co/${modelName}`,
+        'inflection': `https://huggingface.co/${modelName}`,
+        'baichuan': `https://huggingface.co/${modelName}`,
+        'alibaba': `https://huggingface.co/${modelName}`,
+        'zhipu': `https://huggingface.co/${modelName}`,
+        'sensetime': `https://huggingface.co/${modelName}`,
+        'baidu': `https://huggingface.co/${modelName}`,
+        'iflytek': `https://huggingface.co/${modelName}`,
+        'minimax': `https://huggingface.co/${modelName}`,
+        'bytedance': `https://huggingface.co/${modelName}`,
+        'moonshot': `https://huggingface.co/${modelName}`,
+        'perplexity': 'https://www.perplexity.ai/',
+        'reka': 'https://www.reka.ai/',
+        'command-r': 'https://cohere.com/command',
+        'claude': 'https://www.anthropic.com/claude',
+        'gemini': 'https://ai.google.dev/gemini-api/docs/models/gemini',
+        'gpt': 'https://platform.openai.com/docs/models'
+    };
+    
+    // Check if provider has a custom URL
+    if (providerUrls[provider]) {
+        return providerUrls[provider];
+    }
+    
+    // Default to HuggingFace for unknown providers
+    return `https://huggingface.co/${modelName}`;
+}
+
 function renderLeaderboard() {
     const tbody = document.getElementById('leaderboard-body');
     tbody.innerHTML = '';
     
     filteredData.forEach((model, index) => {
+        const modelUrl = getModelUrl(model.model);
+        const modelLink = modelUrl 
+            ? `<a href="${modelUrl}" target="_blank" class="model-link">${escapeHtml(model.model)}</a>`
+            : escapeHtml(model.model);
+            
         const row = document.createElement('tr');
         row.innerHTML = `
             <td class="rank">${index + 1}</td>
-            <td class="model-name">${escapeHtml(model.model)}</td>
-            <td class="score ugi-score">${model.ugi.toFixed(2)}</td>
-            <td class="score w10-score">${model.w10.toFixed(1)}</td>
-            <td><span class="ideology ideology-${model.ideology.toLowerCase()}">${model.ideology}</span></td>
+            <td class="model-name">${modelLink}</td>
+            <td class="score ugi-score" title="UGI: ${model.ugi.toFixed(2)}/100">${model.ugi.toFixed(2)}</td>
+            <td class="score w10-score" title="Willingness: ${model.w10.toFixed(1)}/10">${model.w10.toFixed(1)}</td>
+            <td><span class="ideology ideology-${model.ideology.toLowerCase().replace(/\s+/g, '-')}">${model.ideology}</span></td>
         `;
         tbody.appendChild(row);
     });
@@ -197,3 +299,23 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Back to top button functionality
+const backToTopButton = document.getElementById('back-to-top');
+
+// Show/hide button based on scroll position
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+// Scroll to top when clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
