@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="theme-toggle">
+        <button id="theme-button" aria-label="Toggle theme">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </div>
     <div class="container">
         <header>
-            <h1>🤖 OpenUGI Leaderboard</h1>
+            <div class="logo-container">
+                <div class="logo">🧠</div>
+                <h1>OpenUGI Leaderboard</h1>
+            </div>
             <p class="subtitle">Tracking Uncensored General Intelligence in AI Models</p>
+            <div class="header-stats">
+                <span class="live-indicator">🟢 Live</span>
+                <span class="separator">•</span>
+                <span id="refresh-timer">Auto-refresh in 60:00</span>
+            </div>
         </header>
 
         <div class="stats-container">
@@ -41,6 +54,13 @@
             </select>
         </div>
 
+        <div class="leaderboard-header">
+            <h2>🏆 Rankings</h2>
+            <button id="manual-refresh" class="refresh-button">
+                <span>↻</span> Refresh Now
+            </button>
+        </div>
+        
         <div class="leaderboard">
             <table id="leaderboard-table">
                 <thead>

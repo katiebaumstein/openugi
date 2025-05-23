@@ -1,5 +1,7 @@
 let leaderboardData = [];
 let filteredData = [];
+let refreshInterval;
+let refreshTimeRemaining = 3600; // seconds
 
 async function fetchLeaderboardData() {
     try {
@@ -16,6 +18,9 @@ async function fetchLeaderboardData() {
         // Format the date nicely
         const lastUpdated = new Date(jsonData.lastUpdated);
         document.getElementById('last-updated').textContent = lastUpdated.toLocaleDateString();
+        
+        showRefreshNotification();
+        resetRefreshTimer();
     } catch (error) {
         console.error('Error fetching data:', error);
         document.getElementById('leaderboard-body').innerHTML = 
@@ -105,3 +110,90 @@ document.getElementById('ideology-filter').addEventListener('change', filterAndS
 document.getElementById('sort-by').addEventListener('change', filterAndSort);
 
 fetchLeaderboardData();
+
+// Initialize theme
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
+
+// Theme toggle
+document.getElementById('theme-button').addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
+
+function updateThemeIcon(theme) {
+    const icon = document.querySelector('.theme-icon');
+    icon.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+
+// Manual refresh button
+document.getElementById('manual-refresh').addEventListener('click', async () => {
+    const button = document.getElementById('manual-refresh');
+    button.disabled = true;
+    button.innerHTML = '<span style="animation: spin 1s linear infinite;">↻</span> Refreshing...';
+    
+    await fetchLeaderboardData();
+    
+    button.disabled = false;
+    button.innerHTML = '<span>↻</span> Refresh Now';
+});
+
+// Auto refresh every hour
+setInterval(() => {
+    console.log('Auto-refreshing leaderboard data...');
+    fetchLeaderboardData();
+}, 3600000);
+
+// Refresh timer
+function startRefreshTimer() {
+    refreshInterval = setInterval(() => {
+        refreshTimeRemaining--;
+        updateRefreshDisplay();
+        
+        if (refreshTimeRemaining <= 0) {
+            refreshTimeRemaining = 3600;
+        }
+    }, 1000);
+}
+
+function resetRefreshTimer() {
+    refreshTimeRemaining = 3600;
+    updateRefreshDisplay();
+}
+
+function updateRefreshDisplay() {
+    const minutes = Math.floor(refreshTimeRemaining / 60);
+    const seconds = refreshTimeRemaining % 60;
+    document.getElementById('refresh-timer').textContent = 
+        `Auto-refresh in ${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// Add visual feedback for refresh
+function showRefreshNotification() {
+    const notification = document.createElement('div');
+    notification.className = 'refresh-notification';
+    notification.textContent = '✅ Data refreshed';
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+// Start the refresh timer
+startRefreshTimer();
+
+// Add CSS for spinning animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+`;
+document.head.appendChild(style);

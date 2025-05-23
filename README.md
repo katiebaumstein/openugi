@@ -4,12 +4,16 @@ A modern web interface for viewing and exploring the UGI (Uncensored General Int
 
 ## Features
 
-- =� Real-time leaderboard display with 830+ AI models
-- = Search functionality to find specific models
-- <� Filter by ideology (Liberalism, Centrism, Conservatism, etc.)
-- =� Sort by UGI score or W/10 score
-- =� Responsive design for mobile and desktop
-- = Auto-updated data from the official UGI Leaderboard
+- 📊 Real-time leaderboard display with 830+ AI models
+- 🔍 Search functionality to find specific models
+- 🏷️ Filter by ideology (Liberalism, Centrism, Conservatism, etc.)
+- 📈 Sort by UGI score or W/10 score
+- 📱 Responsive design for mobile and desktop
+- 🔄 Auto-refresh data every hour
+- 🌓 Dark/Light mode toggle
+- ✨ Modern UI with smooth animations
+- ⏱️ Live refresh countdown timer
+- 🔔 Visual notifications on data updates
 
 ## Metrics Explained
 
@@ -31,7 +35,7 @@ A modern web interface for viewing and exploring the UGI (Uncensored General Int
 
 3. **Open your browser** and navigate to:
    ```
-   http://localhost:8080
+   http://localhost:3000
    ```
 
 ### Alternative Commands
@@ -40,6 +44,17 @@ You can also run the Python scripts directly:
 - `python3 fetch_data.py` - Fetch latest data
 - `python3 server.py` - Start the server
 
+### Auto-refresh Mode
+
+To run both the server and auto-fetch service (refreshes data every hour):
+```bash
+npm run start-all
+```
+
+Or run them separately:
+- `npm run auto-fetch` - Start the auto-fetch service
+- `npm start` - Start the web server
+
 ## Data Source
 
 Data is fetched from the official [UGI Leaderboard](https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard) on Hugging Face Spaces.
@@ -47,9 +62,10 @@ Data is fetched from the official [UGI Leaderboard](https://huggingface.co/space
 ## Files
 
 - `index.html` - Main webpage structure
-- `styles.css` - Styling (HuggingFace-inspired design)
-- `script.js` - Interactive functionality
+- `styles.css` - Modern styling with dark mode support
+- `script.js` - Interactive functionality and auto-refresh
 - `fetch_data.py` - Script to fetch latest UGI data
+- `auto_fetch.py` - Service to auto-update data every hour
 - `leaderboard_data.json` - Cached leaderboard data
 - `server.py` - Simple Python HTTP server
 

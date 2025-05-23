@@ -6,7 +6,9 @@
   "scripts": {
     "start": "python3 server.py",
     "fetch-data": "python3 fetch_data.py",
-    "dev": "python3 server.py"
+    "dev": "python3 server.py",
+    "auto-fetch": "python3 auto_fetch.py",
+    "start-all": "python3 auto_fetch.py & python3 server.py"
   },
   "keywords": [
     "ugi",

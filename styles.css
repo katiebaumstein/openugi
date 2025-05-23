@@ -4,11 +4,69 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-card: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --text-tertiary: #94a3b8;
+    --border: #e2e8f0;
+    --accent-blue: #3b82f6;
+    --accent-green: #10b981;
+    --accent-amber: #f59e0b;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #94a3b8;
+    --border: #334155;
+    --accent-blue: #60a5fa;
+    --accent-green: #34d399;
+    --accent-amber: #fbbf24;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background-color: #f7f8fa;
-    color: #1a1a1a;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
     line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#theme-button {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+#theme-button:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
 }
 
 .container {
@@ -19,47 +77,120 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    font-size: 4rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #1a1a1a;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
 }
 
 .subtitle {
-    color: #6b7280;
+    color: var(--text-secondary);
     font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.header-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+}
+
+.live-indicator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.separator {
+    color: var(--text-tertiary);
 }
 
 .stats-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-bottom: 40px;
 }
 
 .stat-card {
-    background: white;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--shadow);
     text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-green));
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-card:hover::before {
+    transform: translateX(0);
 }
 
 .stat-card h3 {
-    color: #6b7280;
+    color: var(--text-secondary);
     font-size: 0.9rem;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .stat-value {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--text-primary);
 }
 
 .filters {
@@ -70,32 +201,76 @@ h1 {
 }
 
 .search-input, .filter-select {
-    padding: 10px 16px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
+    padding: 12px 20px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
     font-size: 0.95rem;
-    background: white;
-    transition: border-color 0.2s;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
 }
 
 .search-input {
     flex: 1;
-    min-width: 250px;
+    min-width: 300px;
 }
 
 .filter-select {
-    min-width: 150px;
+    min-width: 180px;
+    cursor: pointer;
 }
 
 .search-input:focus, .filter-select:focus {
     outline: none;
-    border-color: #3b82f6;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.leaderboard-header h2 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.refresh-button {
+    padding: 8px 16px;
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.refresh-button:hover {
+    background: var(--accent-blue);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.refresh-button span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.refresh-button:hover span {
+    transform: rotate(180deg);
 }
 
 .leaderboard {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: var(--bg-card);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
     overflow: hidden;
 }
 
@@ -105,119 +280,146 @@ table {
 }
 
 thead {
-    background-color: #f9fafb;
+    background-color: var(--bg-secondary);
 }
 
 th {
-    padding: 16px;
+    padding: 20px;
     text-align: left;
     font-weight: 600;
-    color: #374151;
+    color: var(--text-secondary);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
 tbody tr {
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--border);
+    transition: background-color 0.2s ease;
 }
 
 tbody tr:hover {
-    background-color: #f9fafb;
+    background-color: var(--bg-secondary);
 }
 
 td {
-    padding: 16px;
+    padding: 20px;
 }
 
 .rank {
-    font-weight: 600;
-    color: #6b7280;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
 }
 
 .model-name {
     font-weight: 500;
-    color: #1a1a1a;
+    color: var(--text-primary);
     word-break: break-word;
 }
 
 .score {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .ugi-score {
-    color: #3b82f6;
+    color: var(--accent-blue);
 }
 
 .w10-score {
-    color: #10b981;
+    color: var(--accent-green);
 }
 
 .ideology {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 6px 16px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
 }
 
 .ideology-liberalism {
-    background-color: #dbeafe;
-    color: #1e40af;
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--accent-blue);
 }
 
 .ideology-centrism {
-    background-color: #e5e7eb;
-    color: #374151;
+    background-color: rgba(156, 163, 175, 0.1);
+    color: var(--text-secondary);
 }
 
 .ideology-conservatism {
-    background-color: #fee2e2;
-    color: #991b1b;
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
 }
 
 .ideology-progressivism {
-    background-color: #d1fae5;
-    color: #065f46;
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--accent-green);
 }
 
 .ideology-libertarianism {
-    background-color: #fef3c7;
-    color: #92400e;
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--accent-amber);
 }
 
 .ideology-nationalism {
-    background-color: #fde68a;
-    color: #78350f;
+    background-color: rgba(217, 119, 6, 0.1);
+    color: #d97706;
 }
 
 .ideology-socialism {
-    background-color: #fecaca;
-    color: #7f1d1d;
+    background-color: rgba(220, 38, 38, 0.1);
+    color: #dc2626;
 }
 
 .ideology-unknown {
-    background-color: #f3f4f6;
-    color: #4b5563;
+    background-color: rgba(156, 163, 175, 0.1);
+    color: var(--text-tertiary);
 }
 
 .loading {
     text-align: center;
-    padding: 40px;
-    color: #6b7280;
+    padding: 60px;
+    color: var(--text-secondary);
+}
+
+.refresh-notification {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: var(--accent-green);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 60px;
     text-align: center;
-    color: #6b7280;
+    color: var(--text-secondary);
     font-size: 0.9rem;
+    padding-bottom: 40px;
 }
 
 footer a {
-    color: #3b82f6;
+    color: var(--accent-blue);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 footer a:hover {
@@ -225,8 +427,23 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    .theme-toggle {
+        top: 10px;
+        right: 10px;
+    }
+    
+    #theme-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .logo {
+        font-size: 3rem;
     }
     
     .filters {
@@ -235,13 +452,29 @@ footer a:hover {
     
     .search-input, .filter-select {
         width: 100%;
+        min-width: auto;
+    }
+    
+    .leaderboard-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .refresh-button {
+        width: 100%;
+        justify-content: center;
     }
     
     table {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
     
     th, td {
         padding: 12px 8px;
+    }
+    
+    .stat-value {
+        font-size: 2rem;
     }
 }
