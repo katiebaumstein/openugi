@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenUGI - Uncensored General Intelligence Leaderboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ghibli-styles.css">
 </head>
 <body>
     <div class="theme-toggle">
@@ -12,10 +13,17 @@
             <span class="theme-icon">🌙</span>
         </button>
     </div>
+    <div class="corner-vine left">
+        <img src="corner-vine-left.png" alt="">
+    </div>
+    <div class="corner-vine right">
+        <img src="corner-vine-right.png" alt="">
+    </div>
+    
     <div class="container">
-        <header>
+        <header class="hero-header">
             <div class="logo-container">
-                <div class="logo">🧠</div>
+                <img src="logo.png" alt="OpenUGI Logo" class="logo-img">
                 <h1>OpenUGI Leaderboard</h1>
             </div>
             <p class="subtitle">Tracking Uncensored General Intelligence in AI Models</p>
@@ -41,11 +49,13 @@
             </div>
         </div>
 
+        <img src="flower-divider.png" class="section-divider" alt="">
+
         <div class="info-section">
             <h2>📊 Understanding the Scores</h2>
             <div class="score-explanations">
                 <div class="score-card">
-                    <div class="score-icon">🧠</div>
+                    <img src="ugi-icon.png" alt="UGI Score" class="score-icon-img">
                     <h3>UGI Score</h3>
                     <p class="score-range">Range: 0-100</p>
                     <p>Measures the model's <strong>knowledge breadth</strong> on uncensored topics. Higher scores indicate greater capability to understand and process diverse, potentially sensitive information.</p>
@@ -60,7 +70,7 @@
                     </div>
                 </div>
                 <div class="score-card">
-                    <div class="score-icon">💬</div>
+                    <img src="w10-icon.png" alt="W/10 Score" class="score-icon-img">
                     <h3>W/10 Score</h3>
                     <p class="score-range">Range: 0-10</p>
                     <p>Indicates the model's <strong>willingness to engage</strong> with controversial topics. Higher scores show less restrictive content filtering.</p>
@@ -80,8 +90,13 @@
             </div>
         </div>
 
+        <img src="flower-divider.png" class="section-divider" alt="">
+
         <div class="filters">
-            <input type="text" id="search" placeholder="Search models..." class="search-input">
+            <div class="search-container">
+                <img src="search-companion.png" class="search-companion" alt="">
+                <input type="text" id="search" placeholder="Search models..." class="search-input">
+            </div>
             <select id="ideology-filter" class="filter-select">
                 <option value="">All Ideologies</option>
             </select>
@@ -133,14 +148,17 @@
             </table>
         </div>
 
-        <footer>
-            <p>Data sourced from <a href="https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard" target="_blank">UGI Leaderboard</a> on Hugging Face</p>
-            <p>UGI measures model knowledge of uncensored information | W/10 measures willingness to answer (0-10)</p>
+        <footer class="ghibli-footer">
+            <img src="footer-scenery.png" class="footer-scenery" alt="">
+            <div class="footer-content">
+                <p>Data sourced from <a href="https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard" target="_blank">UGI Leaderboard</a> on Hugging Face</p>
+                <p>UGI measures model knowledge of uncensored information | W/10 measures willingness to answer (0-10)</p>
+            </div>
         </footer>
     </div>
 
-    <button id="back-to-top" aria-label="Back to top" title="Back to top">
-        <span>↑</span>
+    <button id="back-to-top" aria-label="Back to top" title="Back to top" class="cat-bus-button">
+        <img src="cat-bus-scroll.png" alt="Back to top">
     </button>
 
     <script src="script.js"></script>

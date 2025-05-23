@@ -19,7 +19,7 @@ async function fetchLeaderboardData() {
         const lastUpdated = new Date(jsonData.lastUpdated);
         document.getElementById('last-updated').textContent = lastUpdated.toLocaleDateString();
         
-        showRefreshNotification();
+        // Just reset the timer, no notification
         resetRefreshTimer();
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -157,8 +157,19 @@ function renderLeaderboard() {
             : escapeHtml(model.model);
             
         const row = document.createElement('tr');
+        
+        // Add special decorations for top 3
+        let rankDisplay = `<span class="rank-number">${index + 1}</span>`;
+        if (index === 0) {
+            rankDisplay += '<img src="ranking-crown.png" class="rank-decoration" alt="1st place">';
+        } else if (index === 1) {
+            rankDisplay += '<img src="star-medals.png" class="rank-decoration" alt="2nd place" style="filter: hue-rotate(0deg);">';
+        } else if (index === 2) {
+            rankDisplay += '<img src="star-medals.png" class="rank-decoration" alt="3rd place" style="filter: hue-rotate(30deg) brightness(0.8);">';
+        }
+        
         row.innerHTML = `
-            <td class="rank">${index + 1}</td>
+            <td class="rank">${rankDisplay}</td>
             <td class="model-name">${modelLink}</td>
             <td class="score ugi-score" title="UGI: ${model.ugi.toFixed(2)}/100">${model.ugi.toFixed(2)}</td>
             <td class="score w10-score" title="Willingness: ${model.w10.toFixed(1)}/10">${model.w10.toFixed(1)}</td>
@@ -275,27 +286,28 @@ function updateRefreshDisplay() {
         `Auto-refresh in ${minutes}:${seconds.toString().padStart(2, '0')}`;
 }
 
-// Add visual feedback for refresh
-function showRefreshNotification() {
-    const notification = document.createElement('div');
-    notification.className = 'refresh-notification';
-    notification.textContent = '✅ Data refreshed';
-    document.body.appendChild(notification);
-    
-    setTimeout(() => {
-        notification.remove();
-    }, 3000);
-}
+// Removed intrusive notification - users can see the live indicator and last updated time instead
 
 // Start the refresh timer
 startRefreshTimer();
 
-// Add CSS for spinning animation
+// Add CSS for animations
 const style = document.createElement('style');
 style.textContent = `
     @keyframes spin {
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
+    }
+    
+    @keyframes slideUp {
+        from {
+            transform: translateX(-50%) translateY(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
     }
 `;
 document.head.appendChild(style);

@@ -1,0 +1,309 @@
+/* Ghibli Theme Styles */
+
+/* Background Pattern */
+body {
+    background-image: url('cloud-pattern.png');
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0.85) 0%, 
+        rgba(248, 250, 252, 0.9) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+[data-theme="dark"] body::before {
+    background: linear-gradient(to bottom, 
+        rgba(15, 23, 42, 0.92) 0%, 
+        rgba(30, 41, 59, 0.95) 100%);
+}
+
+/* Corner Vines */
+.corner-vine {
+    position: fixed;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.corner-vine img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+}
+
+.corner-vine.left {
+    top: 0;
+    left: 0;
+}
+
+.corner-vine.right {
+    top: 0;
+    right: 0;
+}
+
+/* Hero Header with Banner */
+.hero-header {
+    position: relative;
+    background-image: url('hero-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px 40px;
+    border-radius: 20px;
+    margin-top: -20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0.3) 0%, 
+        rgba(255, 255, 255, 0.6) 100%);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+[data-theme="dark"] .hero-header::before {
+    background: linear-gradient(to bottom, 
+        rgba(15, 23, 42, 0.4) 0%, 
+        rgba(15, 23, 42, 0.7) 100%);
+}
+
+.hero-header > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section Dividers */
+.section-divider {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px auto;
+    opacity: 0.7;
+}
+
+/* Cat Bus Back to Top */
+.cat-bus-button {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.cat-bus-button img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+.cat-bus-button:hover img {
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* Search and Filter Icons */
+.search-container {
+    position: relative;
+}
+
+.search-companion {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.search-input {
+    padding-left: 55px !important;
+}
+
+.filter-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Footer Scenery */
+.ghibli-footer {
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.footer-scenery {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px 20px 0 0;
+    margin-top: -50px;
+}
+
+[data-theme="dark"] .footer-content {
+    background: rgba(30, 41, 59, 0.9);
+}
+
+/* Ranking Decorations */
+.rank-decoration {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Sparkle Effects */
+@keyframes sparkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+.high-score-sparkle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('score-sparkles.png');
+    background-size: contain;
+    animation: sparkle 2s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* Totoro Loading */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.totoro-loader {
+    width: 120px;
+    height: 120px;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Spirit Guide Tooltip */
+.spirit-tooltip {
+    position: relative;
+}
+
+.spirit-helper {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip:hover .spirit-helper {
+    opacity: 1;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Soft Card Shadows */
+.stat-card, .score-card, .leaderboard {
+    box-shadow: 0 5px 20px rgba(147, 197, 253, 0.2);
+    border: 1px solid rgba(147, 197, 253, 0.1);
+}
+
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .score-card,
+[data-theme="dark"] .leaderboard {
+    box-shadow: 0 5px 20px rgba(30, 41, 59, 0.3);
+    border: 1px solid rgba(71, 85, 105, 0.2);
+}
+
+/* Magical Hover Effects */
+.stat-card:hover,
+.score-card:hover {
+    box-shadow: 0 8px 30px rgba(147, 197, 253, 0.3);
+}
+
+/* Cute Rounded Corners */
+.stat-card, .score-card, .leaderboard, .search-input, .filter-select {
+    border-radius: 20px !important;
+}
+
+.refresh-button {
+    border-radius: 25px !important;
+    padding: 12px 24px !important;
+}
+
+/* Gentle Animations */
+.stat-card, .score-card, .leaderboard-header h2, .model-link {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Softer Colors */
+.stats-container .stat-card:nth-child(1) {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.stats-container .stat-card:nth-child(2) {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.stats-container .stat-card:nth-child(3) {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+}
+
+[data-theme="dark"] .stats-container .stat-card {
+    background: var(--bg-card) !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .corner-vine img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .hero-header {
+        padding: 40px 15px 30px;
+    }
+    
+    .cat-bus-button img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .section-divider {
+        margin: 5px auto;
+    }
+}
