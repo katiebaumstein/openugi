@@ -69,7 +69,20 @@ const translations = {
         w10Tooltip: "Willingness to answer: Engagement with controversial topics (0-10)",
         
         // Back to top
-        backToTop: "Back to top"
+        backToTop: "Back to top",
+        
+        // Ideologies
+        ideologies: {
+            "Liberalism": "Liberalism",
+            "Classical Liberalism": "Classical Liberalism",
+            "Conservatism": "Conservatism",
+            "Libertarianism": "Libertarianism",
+            "Progressivism": "Progressivism",
+            "Centrism": "Centrism",
+            "Nationalism": "Nationalism",
+            "Socialism": "Socialism",
+            "Unknown": "Unknown"
+        }
     },
     
     zh: {
@@ -142,7 +155,20 @@ const translations = {
         w10Tooltip: "回答意愿：参与争议性话题（0-10）",
         
         // Back to top
-        backToTop: "返回顶部"
+        backToTop: "返回顶部",
+        
+        // Ideologies
+        ideologies: {
+            "Liberalism": "自由主义",
+            "Classical Liberalism": "古典自由主义",
+            "Conservatism": "保守主义",
+            "Libertarianism": "自由意志主义",
+            "Progressivism": "进步主义",
+            "Centrism": "中间主义",
+            "Nationalism": "民族主义",
+            "Socialism": "社会主义",
+            "Unknown": "未知"
+        }
     },
     
     ar: {
@@ -215,6 +241,19 @@ const translations = {
         w10Tooltip: "الاستعداد للإجابة: المشاركة في المواضيع المثيرة للجدل (0-10)",
         
         // Back to top
-        backToTop: "العودة إلى الأعلى"
+        backToTop: "العودة إلى الأعلى",
+        
+        // Ideologies
+        ideologies: {
+            "Liberalism": "الليبرالية",
+            "Classical Liberalism": "الليبرالية الكلاسيكية",
+            "Conservatism": "المحافظة",
+            "Libertarianism": "الليبرتارية",
+            "Progressivism": "التقدمية",
+            "Centrism": "الوسطية",
+            "Nationalism": "القومية",
+            "Socialism": "الاشتراكية",
+            "Unknown": "غير معروف"
+        }
     }
 };

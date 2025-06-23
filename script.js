@@ -59,11 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function populateIdeologyFilter() {
     const ideologies = [...new Set(leaderboardData.map(d => d.ideology))];
     const select = document.getElementById('ideology-filter');
+    const t = translations[currentLang];
+    
+    // Clear existing options except the first one (All Ideologies)
+    while (select.options.length > 1) {
+        select.remove(1);
+    }
     
     ideologies.forEach(ideology => {
         const option = document.createElement('option');
         option.value = ideology;
-        option.textContent = ideology;
+        option.textContent = t.ideologies[ideology] || ideology;
         select.appendChild(option);
     });
 }
@@ -179,7 +185,7 @@ function renderLeaderboard() {
             <td class="model-name">${modelLink}</td>
             <td class="score ugi-score" title="UGI: ${model.ugi.toFixed(2)}/100">${model.ugi.toFixed(2)}</td>
             <td class="score w10-score" title="Willingness: ${model.w10.toFixed(1)}/10">${model.w10.toFixed(1)}</td>
-            <td><span class="ideology ideology-${model.ideology.toLowerCase().replace(/\s+/g, '-')}">${model.ideology}</span></td>
+            <td><span class="ideology ideology-${model.ideology.toLowerCase().replace(/\s+/g, '-')}">${translations[currentLang].ideologies[model.ideology] || model.ideology}</span></td>
         `;
         tbody.appendChild(row);
     });
