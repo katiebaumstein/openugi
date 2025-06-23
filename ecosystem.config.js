@@ -15,7 +15,7 @@ module.exports = {
       env_production: {
         NODE_ENV: 'production',
         PORT: 4000,
-        FRONTEND_URL: 'https://yourdomain.com',
+        FRONTEND_URL: 'https://openugi.com',
         API_KEY: 'your-secret-api-key-here'
       },
       error_file: './logs/api-error.log',
