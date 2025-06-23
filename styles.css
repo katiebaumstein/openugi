@@ -1028,11 +1028,11 @@ footer a:hover {
     }
     
     td.ugi-score::before {
-        content: "UGI: ";
+        content: attr(data-label);
     }
     
     td.w10-score::before {
-        content: "W/10: ";
+        content: attr(data-label);
     }
     
     /* Scores inline */

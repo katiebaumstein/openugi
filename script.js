@@ -183,8 +183,8 @@ function renderLeaderboard() {
         row.innerHTML = `
             <td class="rank">${rankDisplay}</td>
             <td class="model-name">${modelLink}</td>
-            <td class="score ugi-score" title="UGI: ${model.ugi.toFixed(2)}/100">${model.ugi.toFixed(2)}</td>
-            <td class="score w10-score" title="Willingness: ${model.w10.toFixed(1)}/10">${model.w10.toFixed(1)}</td>
+            <td class="score ugi-score" data-label="${translations[currentLang].ugiScore}: " title="UGI: ${model.ugi.toFixed(2)}/100">${model.ugi.toFixed(2)}</td>
+            <td class="score w10-score" data-label="${translations[currentLang].w10Score}: " title="Willingness: ${model.w10.toFixed(1)}/10">${model.w10.toFixed(1)}</td>
             <td><span class="ideology ideology-${model.ideology.toLowerCase().replace(/\s+/g, '-')}">${translations[currentLang].ideologies[model.ideology] || model.ideology}</span></td>
         `;
         tbody.appendChild(row);

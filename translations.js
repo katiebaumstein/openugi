@@ -81,7 +81,19 @@ const translations = {
             "Centrism": "Centrism",
             "Nationalism": "Nationalism",
             "Socialism": "Socialism",
-            "Unknown": "Unknown"
+            "Social Democracy": "Social Democracy",
+            "Technocracy": "Technocracy",
+            "Environmentalism": "Environmentalism",
+            "Feminism": "Feminism",
+            "Anarchism": "Anarchism",
+            "Populism": "Populism",
+            "Authoritarianism": "Authoritarianism",
+            "Fascism": "Fascism",
+            "Communism": "Communism",
+            "Capitalism": "Capitalism",
+            "Unknown": "Unknown",
+            "NA": "N/A",
+            "N/A": "N/A"
         }
     },
     
@@ -167,7 +179,19 @@ const translations = {
             "Centrism": "中间主义",
             "Nationalism": "民族主义",
             "Socialism": "社会主义",
-            "Unknown": "未知"
+            "Social Democracy": "社会民主主义",
+            "Technocracy": "技术官僚主义",
+            "Environmentalism": "环保主义",
+            "Feminism": "女权主义",
+            "Anarchism": "无政府主义",
+            "Populism": "民粹主义",
+            "Authoritarianism": "威权主义",
+            "Fascism": "法西斯主义",
+            "Communism": "共产主义",
+            "Capitalism": "资本主义",
+            "Unknown": "未知",
+            "NA": "未分类",
+            "N/A": "未分类"
         }
     },
     
@@ -253,7 +277,19 @@ const translations = {
             "Centrism": "الوسطية",
             "Nationalism": "القومية",
             "Socialism": "الاشتراكية",
-            "Unknown": "غير معروف"
+            "Social Democracy": "الديمقراطية الاجتماعية",
+            "Technocracy": "التكنوقراطية",
+            "Environmentalism": "البيئية",
+            "Feminism": "النسوية",
+            "Anarchism": "الفوضوية",
+            "Populism": "الشعبوية",
+            "Authoritarianism": "السلطوية",
+            "Fascism": "الفاشية",
+            "Communism": "الشيوعية",
+            "Capitalism": "الرأسمالية",
+            "Unknown": "غير معروف",
+            "NA": "غير مصنف",
+            "N/A": "غير مصنف"
         }
     }
 };
