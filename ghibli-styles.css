@@ -94,9 +94,9 @@ body::before {
 .section-divider {
     display: block;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     height: auto;
-    margin: 11px auto;
+    margin: 15px auto;
     opacity: 0.7;
 }
 
