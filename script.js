@@ -1,8 +1,10 @@
+// Initialize language immediately
+let currentLang = localStorage.getItem('language') || 'en';
+
 let leaderboardData = [];
 let filteredData = [];
 let refreshInterval;
 let refreshTimeRemaining = 3600; // seconds
-let currentLang = localStorage.getItem('language') || 'en';
 
 async function fetchLeaderboardData() {
     try {
@@ -59,6 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
 function populateIdeologyFilter() {
     const ideologies = [...new Set(leaderboardData.map(d => d.ideology))];
     const select = document.getElementById('ideology-filter');
+    
+    // Make sure we have the current language
+    if (!currentLang) {
+        currentLang = localStorage.getItem('language') || 'en';
+    }
+    
     const t = translations[currentLang];
     
     // Clear existing options except the first one (All Ideologies)
@@ -242,6 +250,9 @@ async function initializeApp() {
         await new Promise(resolve => setTimeout(resolve, 100));
     }
     
+    // Set the current language early
+    currentLang = localStorage.getItem('language') || 'en';
+    
     // Now fetch the leaderboard data
     await fetchLeaderboardData();
     
@@ -356,6 +367,11 @@ function updateUILanguage() {
     
     // Update refresh timer display
     updateRefreshDisplay();
+    
+    // Re-populate ideology filter with new language
+    if (leaderboardData.length > 0) {
+        populateIdeologyFilter();
+    }
 }
 
 // Language selector handler
@@ -385,6 +401,11 @@ initializeApp();
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('language-select').value = currentLang;
     updateUILanguage();
+    
+    // Re-populate ideology filter with translations if data is already loaded
+    if (leaderboardData.length > 0) {
+        populateIdeologyFilter();
+    }
 });
 
 // Theme toggle
