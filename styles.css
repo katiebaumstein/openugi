@@ -682,32 +682,96 @@ footer a:hover {
         font-size: 1.2rem;
     }
     
+    /* Compact header */
+    header {
+        margin-bottom: 15px;
+        padding-top: 10px;
+    }
+    
+    .logo-container {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .logo-img {
-        height: 80px;
+        height: 50px;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+    
+    .header-stats {
+        font-size: 0.8rem;
+    }
+    
+    /* Compact stats - horizontal scroll */
+    .stats-container {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+    
+    .stat-card {
+        min-width: 140px;
+        padding: 15px;
+    }
+    
+    .stat-card h3 {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    /* Compact jump button */
+    .quick-jump {
+        margin: 15px 0;
+    }
+    
+    .jump-button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
     }
     
     .filters {
         flex-direction: column;
+        margin-bottom: 15px;
     }
     
     .search-input, .filter-select {
         width: 100%;
         min-width: auto;
+        padding: 10px 15px;
+        font-size: 0.9rem;
     }
     
     .leaderboard-header {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
         align-items: stretch;
+        margin-bottom: 15px;
+    }
+    
+    .leaderboard-header h2 {
+        font-size: 1.3rem;
     }
     
     .refresh-button {
         width: 100%;
         justify-content: center;
+        padding: 10px;
+        font-size: 0.85rem;
     }
     
     /* Enhanced mobile table styles */
@@ -777,14 +841,9 @@ footer a:hover {
         position: relative;
     }
     
-    /* Stats cards responsive */
-    .stats-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .stat-value {
-        font-size: 1.8rem;
+    /* Hide section dividers on mobile */
+    .section-divider {
+        display: none;
     }
     
     .info-section h2 {
@@ -793,6 +852,7 @@ footer a:hover {
     
     .score-explanations {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
     
     .score-card {
@@ -803,10 +863,28 @@ footer a:hover {
         font-size: 2.5rem;
     }
     
+    .score-icon-img {
+        width: 50px;
+        height: 50px;
+    }
+    
     .tooltip-text {
         white-space: normal;
         max-width: 200px;
         font-size: 0.8rem;
+    }
+    
+    /* Compact collapsible section */
+    .info-section-collapsible {
+        margin: 20px 0;
+    }
+    
+    .info-toggle {
+        padding: 15px;
+    }
+    
+    .info-toggle h2 {
+        font-size: 1.2rem;
     }
 }
 
@@ -887,6 +965,83 @@ footer a:hover {
     /* Ideology at bottom */
     td:last-child {
         margin-top: 5px;
+    }
+}
+
+/* Quick Jump Button */
+.quick-jump {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.jump-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--accent-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.jump-button:hover {
+    background: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Collapsible Info Section */
+.info-section-collapsible {
+    margin: 40px 0;
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: var(--shadow);
+}
+
+.info-toggle {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    user-select: none;
+}
+
+.info-toggle:hover {
+    background: var(--bg-secondary);
+}
+
+.info-toggle h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.toggle-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+details[open] .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.info-content {
+    padding: 0 20px 20px;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
