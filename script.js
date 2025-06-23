@@ -5,7 +5,11 @@ let refreshTimeRemaining = 3600; // seconds
 
 async function fetchLeaderboardData() {
     try {
-        const response = await fetch('leaderboard_data.json');
+        // Use API endpoint if available, fallback to local file
+        const apiUrl = window.API_CONFIG?.apiUrl || '';
+        const endpoint = apiUrl ? `${apiUrl}/api/leaderboard` : 'leaderboard_data.json';
+        
+        const response = await fetch(endpoint);
         const jsonData = await response.json();
         
         leaderboardData = jsonData.data;

@@ -14,63 +14,120 @@ A modern web interface for viewing and exploring the UGI (Uncensored General Int
 - ✨ Modern UI with smooth animations
 - ⏱️ Live refresh countdown timer
 - 🔔 Visual notifications on data updates
+- 🎯 Separate frontend/backend architecture
 
-## Metrics Explained
+## Architecture
 
-- **UGI Score**: Measures a model's knowledge of uncensored information
-- **W/10 Score**: Willingness to answer controversial topics (0-10 scale)
-- **Ideology**: Political/ideological classification of the model
+The application is split into:
+- **Backend API** - Node.js/Express server providing JSON endpoints
+- **Frontend** - Static HTML/CSS/JS that can be built and deployed anywhere
+- **Data Fetcher** - Python script that updates data hourly
 
-## Quick Start
+## Quick Start (Local Development)
 
-1. **Update the data** (optional - repo includes recent data):
+1. **Install dependencies**:
    ```bash
-   npm run fetch-data
+   npm install
    ```
 
-2. **Start the local server**:
+2. **Run everything with one command**:
    ```bash
    npm start
    ```
+   This starts both frontend (http://localhost:3000) and backend API (http://localhost:4000)
 
-3. **Open your browser** and navigate to:
+### Alternative: Run Frontend and Backend Separately
+
+If you prefer to run them separately:
+
+1. **Terminal 1 - Backend API**:
+   ```bash
+   npm run backend:dev
    ```
-   http://localhost:3000
+   API runs on http://localhost:4000
+
+2. **Terminal 2 - Frontend Only**:
+   ```bash
+   npm run serve:built
    ```
+   Frontend runs on http://localhost:3000
 
-### Alternative Commands
+## Production Deployment
 
-You can also run the Python scripts directly:
-- `python3 fetch_data.py` - Fetch latest data
-- `python3 server.py` - Start the server
-
-### Auto-refresh Mode
-
-To run both the server and auto-fetch service (refreshes data every hour):
+### Backend (with PM2)
 ```bash
-npm run start-all
+# Start backend services with PM2
+npm run pm2:start:prod
+
+# View logs
+npm run pm2:logs
 ```
 
-Or run them separately:
-- `npm run auto-fetch` - Start the auto-fetch service
-- `npm start` - Start the web server
+### Frontend
+```bash
+# Build for production
+API_URL=https://api.yourdomain.com npm run build:prod
+
+# Deploy the 'dist' folder to your web server
+```
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+
+## Available Scripts
+
+### Development
+- `npm run backend:dev` - Run API server with auto-reload
+- `npm run build` - Build frontend to dist/
+- `npm run preview` - Build and preview frontend
+- `npm run fetch-data` - Manually fetch latest data
+
+### Production
+- `npm run backend:prod` - Run API in production mode
+- `npm run build:prod` - Build frontend for production
+- `npm run pm2:start:prod` - Start all services with PM2
+
+## API Endpoints
+
+- `GET /api/health` - Health check
+- `GET /api/leaderboard` - Get leaderboard data
+- `GET /api/stats` - Get statistics
+- `POST /api/refresh` - Manual data refresh (requires API key)
+
+## Metrics Explained
+
+- **UGI Score**: Measures a model's knowledge of uncensored information (0-100)
+- **W/10 Score**: Willingness to answer controversial topics (0-10 scale)
+- **Ideology**: Political/ideological classification of the model
 
 ## Data Source
 
 Data is fetched from the official [UGI Leaderboard](https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard) on Hugging Face Spaces.
 
-## Files
+## Project Structure
 
-- `index.html` - Main webpage structure
-- `styles.css` - Modern styling with dark mode support
-- `script.js` - Interactive functionality and auto-refresh
-- `fetch_data.py` - Script to fetch latest UGI data
-- `auto_fetch.py` - Service to auto-update data every hour
-- `leaderboard_data.json` - Cached leaderboard data
-- `server.py` - Simple Python HTTP server
+```
+openugi/
+├── dist/                 # Frontend build output
+├── logs/                 # Backend logs
+├── server.js            # Backend API server
+├── build.js             # Frontend build script
+├── script.js            # Frontend JavaScript
+├── index.html           # Frontend HTML
+├── styles.css           # Frontend styles
+├── ghibli-styles.css    # Theme styles
+├── ecosystem.config.js  # PM2 configuration
+├── fetch_data.py        # Data fetcher
+├── auto_fetch.py        # Hourly data updater
+└── leaderboard_data.json # Data file
+```
 
 ## Requirements
 
-- Python 3.x (for data fetching and local server)
+- Node.js 14+ (for backend server)
+- Python 3.x (for data fetching)
 - Modern web browser
 - Internet connection (for fetching updates)
+
+## License
+
+MIT

@@ -7,7 +7,8 @@
       "Bash(npm start)",
       "Bash(mv:*)",
       "Bash(rm:*)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }
