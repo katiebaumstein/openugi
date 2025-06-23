@@ -105,11 +105,14 @@ async function build() {
         htmlContent = htmlContent.replace(
             '<script src="script.js"></script>',
             `<script>
-        // Load configuration
+        // Load configuration synchronously before main script
+        window.API_CONFIG = { apiUrl: '${process.env.API_URL || 'http://localhost:4000'}' };
+        
+        // Also try to load config.json for any runtime overrides
         fetch('config.json')
             .then(r => r.json())
-            .then(config => window.API_CONFIG = config)
-            .catch(() => window.API_CONFIG = { apiUrl: 'http://localhost:4000' });
+            .then(config => Object.assign(window.API_CONFIG, config))
+            .catch(() => console.log('Using default config'));
     </script>
     <script src="script.js"></script>`
         );

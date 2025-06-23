@@ -10,7 +10,10 @@
       "Bash(lsof:*)",
       "Bash(mkdir:*)",
       "Bash(ssh:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

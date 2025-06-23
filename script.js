@@ -226,12 +226,24 @@ document.getElementById('search').addEventListener('input', filterAndSort);
 document.getElementById('ideology-filter').addEventListener('change', filterAndSort);
 document.getElementById('sort-by').addEventListener('change', filterAndSort);
 
-fetchLeaderboardData();
+// Wait for config to load before fetching data
+async function initializeApp() {
+    // If config hasn't loaded yet, wait a bit
+    if (!window.API_CONFIG) {
+        await new Promise(resolve => setTimeout(resolve, 100));
+    }
+    
+    // Now fetch the leaderboard data
+    await fetchLeaderboardData();
+    
+    // Initialize theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+}
 
-// Initialize theme
-const savedTheme = localStorage.getItem('theme') || 'light';
-document.documentElement.setAttribute('data-theme', savedTheme);
-updateThemeIcon(savedTheme);
+// Start the app
+initializeApp();
 
 // Theme toggle
 document.getElementById('theme-button').addEventListener('click', () => {
