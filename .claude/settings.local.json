@@ -9,7 +9,8 @@
       "Bash(rm:*)",
       "Bash(lsof:*)",
       "Bash(mkdir:*)",
-      "Bash(ssh:*)"
+      "Bash(ssh:*)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }
