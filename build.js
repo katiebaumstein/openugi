@@ -17,7 +17,11 @@ const PUBLIC_FILES = [
     'corner-vine-right.png',
     'flower-divider.png',
     'search-companion.png',
-    'cat-bus.png',
+    'cat-bus-scroll.png',
+    'ranking-crown.png',
+    'star-medals.png',
+    'footer-scenery.png',
+    'hero-banner.png',
     'favicon.ico'
 ];
 
