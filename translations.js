@@ -47,7 +47,8 @@ const translations = {
         
         // Rankings
         rankings: "🏆 Rankings",
-        refreshNow: "↻ Refresh Now",
+        refreshNow: "Refresh Now",
+        refreshing: "Refreshing...",
         rank: "#",
         model: "Model",
         ideology: "Ideology",
@@ -119,7 +120,8 @@ const translations = {
         
         // Rankings
         rankings: "🏆 排名",
-        refreshNow: "↻ 立即刷新",
+        refreshNow: "立即刷新",
+        refreshing: "正在刷新...",
         rank: "#",
         model: "模型",
         ideology: "意识形态",
@@ -191,7 +193,8 @@ const translations = {
         
         // Rankings
         rankings: "🏆 التصنيفات",
-        refreshNow: "↻ تحديث الآن",
+        refreshNow: "تحديث الآن",
+        refreshing: "جاري التحديث...",
         rank: "#",
         model: "النموذج",
         ideology: "الأيديولوجية",

@@ -399,13 +399,14 @@ function updateThemeIcon(theme) {
 // Manual refresh button
 document.getElementById('manual-refresh').addEventListener('click', async () => {
     const button = document.getElementById('manual-refresh');
+    const t = translations[currentLang];
     button.disabled = true;
-    button.innerHTML = '<span style="animation: spin 1s linear infinite;">↻</span> Refreshing...';
+    button.innerHTML = `<span style="animation: spin 1s linear infinite;">↻</span> ${t.refreshing}`;
     
     await fetchLeaderboardData();
     
     button.disabled = false;
-    button.innerHTML = '<span>↻</span> Refresh Now';
+    button.innerHTML = `<span>↻</span> ${t.refreshNow}`;
 });
 
 // Auto refresh every hour
