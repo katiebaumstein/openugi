@@ -42,11 +42,78 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.theme-toggle {
+/* RTL support for Arabic */
+body[dir="rtl"] {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Arial', sans-serif;
+}
+
+body[dir="rtl"] .container {
+    direction: rtl;
+    text-align: right;
+}
+
+body[dir="rtl"] .model-link,
+body[dir="rtl"] footer a {
+    direction: ltr;
+    display: inline-block;
+}
+
+body[dir="rtl"] .stats-container,
+body[dir="rtl"] .score-explanations {
+    direction: rtl;
+}
+
+body[dir="rtl"] .corner-vine.left {
+    right: 0;
+    left: auto;
+    transform: scaleX(-1);
+}
+
+body[dir="rtl"] .corner-vine.right {
+    left: 0;
+    right: auto;
+    transform: scaleX(-1);
+}
+
+/* Controls container for theme and language */
+.controls-container {
     position: fixed;
     top: 20px;
-    right: 80px;
+    right: 20px;
     z-index: 1000;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+body[dir="rtl"] .controls-container {
+    right: auto;
+    left: 20px;
+}
+
+.language-selector select {
+    background: var(--bg-card);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.language-selector select:hover {
+    border-color: var(--accent-blue);
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.theme-toggle {
+    position: static;
 }
 
 #theme-button {
@@ -671,9 +738,21 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    .theme-toggle {
+    .controls-container {
         top: 10px;
-        right: 40px;
+        right: 10px;
+        flex-direction: row;
+        gap: 8px;
+    }
+    
+    body[dir="rtl"] .controls-container {
+        right: auto;
+        left: 10px;
+    }
+    
+    .language-selector select {
+        padding: 6px 10px;
+        font-size: 0.85rem;
     }
     
     #theme-button {

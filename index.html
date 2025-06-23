@@ -18,10 +18,19 @@
     <link rel="stylesheet" href="ghibli-styles.css">
 </head>
 <body>
-    <div class="theme-toggle">
-        <button id="theme-button" aria-label="Toggle theme">
-            <span class="theme-icon">🌙</span>
-        </button>
+    <div class="controls-container">
+        <div class="language-selector">
+            <select id="language-select" aria-label="Select language">
+                <option value="en">🇬🇧 English</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="ar">🇸🇦 العربية</option>
+            </select>
+        </div>
+        <div class="theme-toggle">
+            <button id="theme-button" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
     </div>
     <div class="corner-vine left">
         <img src="corner-vine-left.png" alt="">
@@ -178,6 +187,7 @@
         <img src="cat-bus-scroll.png" alt="Back to top">
     </button>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

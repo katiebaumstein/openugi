@@ -9,6 +9,7 @@ const PUBLIC_FILES = [
     'styles.css',
     'ghibli-styles.css',
     'script.js',
+    'translations.js',
     'logo.png',
     'ugi-icon.png',
     'w10-icon.png',

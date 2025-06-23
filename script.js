@@ -2,6 +2,7 @@ let leaderboardData = [];
 let filteredData = [];
 let refreshInterval;
 let refreshTimeRemaining = 3600; // seconds
+let currentLang = localStorage.getItem('language') || 'en';
 
 async function fetchLeaderboardData() {
     try {
@@ -27,8 +28,9 @@ async function fetchLeaderboardData() {
         resetRefreshTimer();
     } catch (error) {
         console.error('Error fetching data:', error);
+        const t = translations[currentLang];
         document.getElementById('leaderboard-body').innerHTML = 
-            '<tr><td colspan="5" class="loading">Error loading data. Please try again later.</td></tr>';
+            `<tr><td colspan="5" class="loading">${t.errorLoading}</td></tr>`;
     }
 }
 
@@ -183,7 +185,8 @@ function renderLeaderboard() {
     });
     
     if (filteredData.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="5" class="loading">No models found matching your criteria.</td></tr>';
+        const t = translations[currentLang];
+        tbody.innerHTML = `<tr><td colspan="5" class="loading">${t.noModelsFound}</td></tr>`;
     }
 }
 
@@ -242,8 +245,141 @@ async function initializeApp() {
     updateThemeIcon(savedTheme);
 }
 
+// Translation function
+function updateUILanguage() {
+    const t = translations[currentLang];
+    
+    // Update HTML dir attribute for RTL
+    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = currentLang;
+    
+    // Update title and meta
+    document.title = `${t.title} - ${t.subtitle}`;
+    
+    // Update header
+    document.querySelector('h1').textContent = t.title;
+    document.querySelector('.subtitle').textContent = t.subtitle;
+    document.querySelector('.live-indicator').innerHTML = `🟢 ${t.liveIndicator}`;
+    
+    // Update stats cards
+    const statCards = document.querySelectorAll('.stat-card h3');
+    statCards[0].textContent = t.totalModels;
+    statCards[1].textContent = t.topUgiScore;
+    statCards[2].textContent = t.lastUpdated;
+    
+    // Update jump button
+    document.querySelector('.jump-button').textContent = t.jumpToRankings;
+    
+    // Update Understanding Scores section
+    document.querySelector('.info-toggle h2').textContent = t.understandingScores;
+    
+    // Update score cards
+    const scoreCards = document.querySelectorAll('.score-card');
+    
+    // UGI Score card
+    scoreCards[0].querySelector('h3').textContent = t.ugiScore;
+    scoreCards[0].querySelector('.score-range').textContent = t.ugiRange;
+    scoreCards[0].querySelector('p:nth-of-type(2)').innerHTML = t.ugiDescription;
+    scoreCards[0].querySelector('h4').textContent = t.keyFactors;
+    const ugiFactor = scoreCards[0].querySelectorAll('li');
+    t.ugiFactors.forEach((factor, i) => {
+        if (ugiFactor[i]) ugiFactor[i].textContent = factor;
+    });
+    
+    // W/10 Score card
+    scoreCards[1].querySelector('h3').textContent = t.w10Score;
+    scoreCards[1].querySelector('.score-range').textContent = t.w10Range;
+    scoreCards[1].querySelector('p:nth-of-type(2)').innerHTML = t.w10Description;
+    scoreCards[1].querySelector('h4').textContent = t.keyFactors;
+    const w10Factor = scoreCards[1].querySelectorAll('li');
+    t.w10Factors.forEach((factor, i) => {
+        if (w10Factor[i]) w10Factor[i].textContent = factor;
+    });
+    
+    // Update methodology note
+    document.querySelector('.methodology-note p').innerHTML = t.methodologyNote;
+    
+    // Update filters
+    document.querySelector('#search').placeholder = t.searchPlaceholder;
+    document.querySelector('#ideology-filter option').textContent = t.allIdeologies;
+    
+    // Update sort options
+    const sortOptions = document.querySelectorAll('#sort-by option');
+    sortOptions[0].textContent = t.sortUgiDesc;
+    sortOptions[1].textContent = t.sortUgiAsc;
+    sortOptions[2].textContent = t.sortW10Desc;
+    sortOptions[3].textContent = t.sortW10Asc;
+    
+    // Update rankings header
+    document.querySelector('.leaderboard-header h2').textContent = t.rankings;
+    document.querySelector('.refresh-button').innerHTML = `<span>↻</span> ${t.refreshNow}`;
+    
+    // Update table headers
+    const tableHeaders = document.querySelectorAll('th');
+    tableHeaders[0].textContent = t.rank;
+    tableHeaders[1].textContent = t.model;
+    tableHeaders[2].querySelector('.th-content').childNodes[0].textContent = t.ugiScore + ' ';
+    tableHeaders[3].querySelector('.th-content').childNodes[0].textContent = t.w10Score + ' ';
+    tableHeaders[4].textContent = t.ideology;
+    
+    // Update tooltips
+    document.querySelectorAll('.tooltip-text')[0].textContent = t.ugiTooltip;
+    document.querySelectorAll('.tooltip-text')[1].textContent = t.w10Tooltip;
+    
+    // Update footer
+    const footer = document.querySelector('.footer-content');
+    footer.innerHTML = `
+        <p>${t.dataSourced} <a href="https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard" target="_blank">${t.ugiLeaderboard}</a> ${t.onHuggingFace}</p>
+        <p>${t.footerNote}</p>
+    `;
+    
+    // Update back to top
+    document.querySelector('#back-to-top').title = t.backToTop;
+    
+    // Update loading/error messages
+    const loadingCell = document.querySelector('.loading');
+    if (loadingCell) {
+        if (loadingCell.textContent.includes('Error')) {
+            loadingCell.textContent = t.errorLoading;
+        } else if (loadingCell.textContent.includes('No models')) {
+            loadingCell.textContent = t.noModelsFound;
+        } else {
+            loadingCell.textContent = t.loadingData;
+        }
+    }
+    
+    // Update refresh timer display
+    updateRefreshDisplay();
+}
+
+// Language selector handler
+document.getElementById('language-select').addEventListener('change', (e) => {
+    currentLang = e.target.value;
+    localStorage.setItem('language', currentLang);
+    updateUILanguage();
+    
+    // Re-render leaderboard to update any dynamic content
+    if (filteredData.length > 0) {
+        renderLeaderboard();
+    }
+});
+
+// Update refresh display to use translations
+function updateRefreshDisplay() {
+    const minutes = Math.floor(refreshTimeRemaining / 60);
+    const seconds = refreshTimeRemaining % 60;
+    const t = translations[currentLang];
+    document.getElementById('refresh-timer').textContent = `${t.autoRefresh} ${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
 // Start the app
 initializeApp();
+
+// Initialize language on load
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('language-select').value = currentLang;
+    updateUILanguage();
+});
 
 // Theme toggle
 document.getElementById('theme-button').addEventListener('click', () => {
