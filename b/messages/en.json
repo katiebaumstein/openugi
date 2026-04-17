@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "OpenUGI Leaderboard",
+    "subtitle": "Tracking Uncensored General Intelligence in AI Models",
+    "description": "Leaderboard of AI models ranked by Uncensored General Intelligence (UGI) and Willingness-to-answer (W/10) scores."
+  },
+  "header": {
+    "live": "Live",
+    "autoRefresh": "Auto-refresh in {time}",
+    "jumpToRankings": "Jump to Rankings"
+  },
+  "stats": {
+    "totalModels": "Total Models",
+    "topUGI": "Top UGI Score",
+    "lastUpdated": "Last Updated"
+  },
+  "info": {
+    "understandingScores": "Understanding the Scores",
+    "ugiScoreTitle": "UGI Score",
+    "ugiRange": "Range: 0-100",
+    "ugiDescription": "Measures the model's <strong>knowledge breadth</strong> on uncensored topics. Higher scores indicate greater capability to understand and process diverse, potentially sensitive information.",
+    "w10ScoreTitle": "W/10 Score",
+    "w10Range": "Range: 0-10",
+    "w10Description": "Indicates the model's <strong>willingness to engage</strong> with controversial topics. Higher scores show less restrictive content filtering.",
+    "keyFactors": "Key Factors",
+    "ugiFactors": [
+      "Factual accuracy on controversial topics",
+      "Understanding of complex social issues",
+      "Knowledge of sensitive historical events",
+      "Comprehension of diverse perspectives"
+    ],
+    "w10Factors": [
+      "Response rate to sensitive questions",
+      "Depth of engagement with topics",
+      "Balance between safety and openness",
+      "Contextual appropriateness"
+    ],
+    "methodologyNote": "<strong>Note:</strong> The UGI Leaderboard uses undisclosed evaluation questions to prevent benchmark gaming and maintain fairness across models."
+  },
+  "filters": {
+    "searchPlaceholder": "Search models...",
+    "allIdeologies": "All Ideologies",
+    "sortUgiDesc": "UGI Score ↓",
+    "sortUgiAsc": "UGI Score ↑",
+    "sortW10Desc": "W/10 Score ↓",
+    "sortW10Asc": "W/10 Score ↑"
+  },
+  "leaderboard": {
+    "rankings": "Rankings",
+    "refreshNow": "Refresh Now",
+    "refreshing": "Refreshing...",
+    "rank": "#",
+    "model": "Model",
+    "ugiScore": "UGI Score",
+    "w10Score": "W/10 Score",
+    "ideology": "Ideology",
+    "loading": "Loading leaderboard data...",
+    "error": "Error loading data. Please try again later.",
+    "noResults": "No models found matching your filters.",
+    "ugiTooltip": "Uncensored General Intelligence: Knowledge breadth on sensitive topics (0-100)",
+    "w10Tooltip": "Willingness to answer: Engagement with controversial topics (0-10)",
+    "modelsCount": "{count, plural, =0 {no models} =1 {1 model} other {# models}}"
+  },
+  "footer": {
+    "dataSourced": "Data sourced from {link} on Hugging Face",
+    "ugiLeaderboard": "UGI Leaderboard",
+    "note": "UGI measures model knowledge of uncensored information | W/10 measures willingness to answer (0-10)",
+    "poweredBy": "Built with Next.js 14 + Tailwind + shadcn"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "ideologies": {
+    "Liberalism": "Liberalism",
+    "Centrism": "Centrism",
+    "Classical Liberalism": "Classical Liberalism",
+    "Conservatism": "Conservatism",
+    "Moderate Conservatism": "Moderate Conservatism",
+    "Social Democracy": "Social Democracy",
+    "Social Liberalism": "Social Liberalism",
+    "Unknown": "Unknown",
+    "NA": "N/A"
+  }
+}

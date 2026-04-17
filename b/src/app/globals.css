@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light — warm parchment with forest accents (Ghibli day) */
+    --background: 42 38% 96%;
+    --foreground: 215 28% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    --primary: 158 32% 36%;
+    --primary-foreground: 42 38% 96%;
+
+    --secondary: 172 35% 63%;
+    --secondary-foreground: 215 28% 17%;
+
+    --muted: 36 28% 88%;
+    --muted-foreground: 215 15% 40%;
+
+    --accent: 172 35% 63%;
+    --accent-foreground: 215 28% 17%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 42 38% 96%;
+
+    --border: 36 28% 82%;
+    --input: 36 28% 82%;
+    --ring: 158 32% 36%;
+
+    --ghibli-forest: 158 32% 36%;
+    --ghibli-sky: 200 40% 75%;
+    --ghibli-parchment: 42 38% 96%;
+    --ghibli-sunset: 20 80% 65%;
+    --ghibli-moss: 88 25% 55%;
+    --ghibli-night: 215 35% 15%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 215 35% 10%;
+    --foreground: 42 30% 92%;
+
+    --card: 215 30% 14%;
+    --card-foreground: 42 30% 92%;
+
+    --popover: 215 30% 14%;
+    --popover-foreground: 42 30% 92%;
+
+    --primary: 158 35% 55%;
+    --primary-foreground: 215 35% 10%;
+
+    --secondary: 172 35% 48%;
+    --secondary-foreground: 42 30% 92%;
+
+    --muted: 215 25% 20%;
+    --muted-foreground: 42 15% 70%;
+
+    --accent: 172 35% 48%;
+    --accent-foreground: 42 30% 92%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 42 30% 92%;
+
+    --border: 215 25% 22%;
+    --input: 215 25% 22%;
+    --ring: 158 35% 55%;
+
+    --ghibli-forest: 158 35% 55%;
+    --ghibli-sky: 200 40% 65%;
+    --ghibli-parchment: 42 30% 92%;
+    --ghibli-sunset: 20 75% 60%;
+    --ghibli-moss: 88 30% 45%;
+    --ghibli-night: 215 35% 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: url("/images/cloud-pattern.webp");
+    background-repeat: repeat;
+    background-size: 320px 320px;
+    background-attachment: fixed;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-ghibli-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--ghibli-forest) / 0.15),
+      hsl(var(--ghibli-sky) / 0.15)
+    );
+  }
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--ghibli-forest)) 0%,
+      hsl(var(--ghibli-sky)) 50%,
+      hsl(var(--ghibli-forest)) 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 3s linear infinite;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}

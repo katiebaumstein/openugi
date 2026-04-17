@@ -1,132 +1,107 @@
-# OpenUGI - Uncensored General Intelligence Leaderboard
+# OpenUGI — Uncensored General Intelligence Leaderboard
 
-A modern web interface for viewing and exploring the UGI (Uncensored General Intelligence) leaderboard rankings. This project provides an easy-to-use interface inspired by HuggingFace's leaderboards to track AI models based on their uncensored capabilities.
+Web interface for the [UGI Leaderboard](https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard) — ranks 1,000+ AI models by:
+- **UGI Score** (0-100): knowledge breadth on uncensored topics
+- **W/10 Score** (0-10): willingness to answer controversial questions
 
-## Features
-
-- 📊 Real-time leaderboard display with 830+ AI models
-- 🔍 Search functionality to find specific models
-- 🏷️ Filter by ideology (Liberalism, Centrism, Conservatism, etc.)
-- 📈 Sort by UGI score or W/10 score
-- 📱 Responsive design for mobile and desktop
-- 🔄 Auto-refresh data every hour
-- 🌓 Dark/Light mode toggle
-- ✨ Modern UI with smooth animations
-- ⏱️ Live refresh countdown timer
-- 🔔 Visual notifications on data updates
-- 🎯 Separate frontend/backend architecture
+**Live**: https://openugi.com
 
 ## Architecture
 
-The application is split into:
-- **Backend API** - Node.js/Express server providing JSON endpoints
-- **Frontend** - Static HTML/CSS/JS that can be built and deployed anywhere
-- **Data Fetcher** - Python script that updates data hourly
+```
+┌─ openugi.com / www.openugi.com (SSL) ─────── Nginx reverse proxy
+│                                                    ↓
+│                                              PM2 openugi-b :4003
+│                                              (Next.js standalone)
+│                                                    ↓ reads
+│  b.openugi.com (SSL) ─── 301 → openugi.com   /var/www/openugi-shared/data/leaderboard.json
+│                                                    ↑ updated by
+│                                              cron 0 * * * * → shared/fetch.py
+│                                              (jitter 0-5min, 3-try backoff)
+│                                                    ↓ also writes
+│                                              SQLite history.db + archive/YYYY-MM-DD/HH.{json,csv.gz}
+│
+└─ on the server (webhost, AWS Lightsail, 107.20.206.158)
+```
 
-## Quick Start (Local Development)
+## Directory layout
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+| Path | What | Production location |
+|---|---|---|
+| [`b/`](b/) | **Active** — Next.js 14 + Tailwind + shadcn + next-intl + Framer Motion | `/var/www/openugi-b/` |
+| [`shared/`](shared/) | Hourly data pipeline (Python + SQLite) | `/var/www/openugi-shared/` |
+| [`COMPARISON.md`](COMPARISON.md) | A-vs-B analysis from the architecture review | — |
+| `*.png`, `*.js`, `*.html` (root) | **Legacy v1** — preserved for historical reference; not deployed anywhere | — |
 
-2. **Run everything with one command**:
-   ```bash
-   npm start
-   ```
-   This starts both frontend (http://localhost:3000) and backend API (http://localhost:4000)
+Old Version A (targeted-refresh vanilla) was deployed to `a.openugi.com` during the A/B trial and retired after Version B was selected. See git history for the A/ source.
 
-### Alternative: Run Frontend and Backend Separately
+## Tech stack
 
-If you prefer to run them separately:
+- **Frontend**: Next.js 14 (App Router, Server Components) + React 18 + TypeScript
+- **Styling**: Tailwind CSS + shadcn/ui primitives + custom Ghibli-themed CSS variables
+- **Animation**: Framer Motion (hero logo float, card stagger, row fade)
+- **i18n**: next-intl (EN/ZH/AR with ICU pluralization and RTL)
+- **Table**: @tanstack/react-table (sort/filter/search)
+- **Backend**: Next.js standalone server (no separate Express), reads shared JSON via mtime-invalidated in-memory cache
+- **Data pipeline**: Python + SQLite + gzipped CSV archive
+- **Hosting**: AWS Lightsail (webhost), Nginx reverse proxy, PM2, Let's Encrypt SSL auto-renew
 
-1. **Terminal 1 - Backend API**:
-   ```bash
-   npm run backend:dev
-   ```
-   API runs on http://localhost:4000
+## Local dev
 
-2. **Terminal 2 - Frontend Only**:
-   ```bash
-   npm run serve:built
-   ```
-   Frontend runs on http://localhost:3000
-
-## Production Deployment
-
-### Backend (with PM2)
 ```bash
-# Start backend services with PM2
-npm run pm2:start:prod
+# Make sure shared data exists locally
+cd shared && python3 fetch.py --no-jitter
 
-# View logs
-npm run pm2:logs
+# Run the app
+cd ../b
+npm install
+npm run dev      # http://localhost:4003
 ```
 
-### Frontend
+## Deploy (from local Mac)
+
 ```bash
-# Build for production
-API_URL=https://api.yourdomain.com npm run build:prod
-
-# Deploy the 'dist' folder to your web server
+cd b
+./deploy.sh      # builds locally, scps standalone bundle to webhost, restarts PM2
 ```
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+## API endpoints
 
-## Available Scripts
+All served under https://openugi.com (and https://b.openugi.com → 301):
 
-### Development
-- `npm run backend:dev` - Run API server with auto-reload
-- `npm run build` - Build frontend to dist/
-- `npm run preview` - Build and preview frontend
-- `npm run fetch-data` - Manually fetch latest data
+| Endpoint | Description |
+|---|---|
+| `GET /` | Main leaderboard page (SSR'd with data inline) |
+| `GET /api/leaderboard` | Full snapshot JSON |
+| `GET /api/stats` | Aggregate stats (totals, top UGI, ideology distribution) |
+| `GET /api/health` | Liveness check |
 
-### Production
-- `npm run backend:prod` - Run API in production mode
-- `npm run build:prod` - Build frontend for production
-- `npm run pm2:start:prod` - Start all services with PM2
+## Data history
 
-## API Endpoints
+Every hour's snapshot is preserved in three forms:
 
-- `GET /api/health` - Health check
-- `GET /api/leaderboard` - Get leaderboard data
-- `GET /api/stats` - Get statistics
-- `POST /api/refresh` - Manual data refresh (requires API key)
+1. **`data/leaderboard.json`** — latest (what the app reads)
+2. **`archive/YYYY-MM-DD/HH.json`** — human-browsable JSON snapshot per hour
+3. **`archive/YYYY-MM-DD/HH.csv.gz`** — raw upstream CSV, gzipped
+4. **`data/history.db`** — SQLite time-series, one row per (timestamp, model)
 
-## Metrics Explained
-
-- **UGI Score**: Measures a model's knowledge of uncensored information (0-100)
-- **W/10 Score**: Willingness to answer controversial topics (0-10 scale)
-- **Ideology**: Political/ideological classification of the model
-
-## Data Source
-
-Data is fetched from the official [UGI Leaderboard](https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard) on Hugging Face Spaces.
-
-## Project Structure
-
-```
-openugi/
-├── dist/                 # Frontend build output
-├── logs/                 # Backend logs
-├── server.js            # Backend API server
-├── build.js             # Frontend build script
-├── script.js            # Frontend JavaScript
-├── index.html           # Frontend HTML
-├── styles.css           # Frontend styles
-├── ghibli-styles.css    # Theme styles
-├── ecosystem.config.js  # PM2 configuration
-├── fetch_data.py        # Data fetcher
-├── auto_fetch.py        # Hourly data updater
-└── leaderboard_data.json # Data file
+Query history:
+```sql
+-- This model's UGI trend over last 30 days
+SELECT snapshot_ts, ugi, rank FROM snapshots
+WHERE model = 'xai/grok-4-0709' AND snapshot_ts > datetime('now','-30 days')
+ORDER BY snapshot_ts;
 ```
 
-## Requirements
+Disk cost: ~100 KB/hour = ~860 MB/year. Preserved forever.
 
-- Node.js 14+ (for backend server)
-- Python 3.x (for data fetching)
-- Modern web browser
-- Internet connection (for fetching updates)
+## Credentials / ops
+
+- **GitHub**: `git@github.com:katiebaumstein/openugi.git` (private)
+- **Domain**: Route53 zone `Z08554453618KEFYOLFBD` for `openugi.com` + `www.openugi.com`
+- **SSL**: Let's Encrypt via certbot `--nginx` on webhost, auto-renew
+- **PM2 name**: `openugi-b` (port 4003, fork mode, 256MB cap)
+- **Systemd cron**: `/etc/cron.d/openugi-fetch` on webhost, runs `/var/www/openugi-shared/fetch.py` hourly
 
 ## License
 

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "OpenUGI 排行榜",
+    "subtitle": "追踪 AI 模型的无审查通用智能",
+    "description": "按 UGI（无审查通用智能）和 W/10（回答意愿）得分排名的 AI 模型排行榜。"
+  },
+  "header": {
+    "live": "实时",
+    "autoRefresh": "{time} 后自动刷新",
+    "jumpToRankings": "跳至排名"
+  },
+  "stats": {
+    "totalModels": "模型总数",
+    "topUGI": "最高 UGI 分",
+    "lastUpdated": "最后更新"
+  },
+  "info": {
+    "understandingScores": "评分说明",
+    "ugiScoreTitle": "UGI 分数",
+    "ugiRange": "范围：0-100",
+    "ugiDescription": "衡量模型在<strong>无审查话题上的知识广度</strong>。分数越高，表示模型越能理解和处理多样化的、可能敏感的信息。",
+    "w10ScoreTitle": "W/10 分数",
+    "w10Range": "范围：0-10",
+    "w10Description": "表示模型<strong>参与讨论争议话题的意愿</strong>。分数越高，表明内容过滤越少。",
+    "keyFactors": "关键因素",
+    "ugiFactors": [
+      "争议话题的事实准确性",
+      "对复杂社会问题的理解",
+      "对敏感历史事件的认识",
+      "对多样视角的理解"
+    ],
+    "w10Factors": [
+      "对敏感问题的回答率",
+      "话题参与深度",
+      "安全与开放的平衡",
+      "上下文适当性"
+    ],
+    "methodologyNote": "<strong>注：</strong>UGI 排行榜使用未公开的评估问题以防止基准作弊，保持模型间的公平性。"
+  },
+  "filters": {
+    "searchPlaceholder": "搜索模型...",
+    "allIdeologies": "所有意识形态",
+    "sortUgiDesc": "UGI 分数 ↓",
+    "sortUgiAsc": "UGI 分数 ↑",
+    "sortW10Desc": "W/10 分数 ↓",
+    "sortW10Asc": "W/10 分数 ↑"
+  },
+  "leaderboard": {
+    "rankings": "排名",
+    "refreshNow": "立即刷新",
+    "refreshing": "刷新中...",
+    "rank": "#",
+    "model": "模型",
+    "ugiScore": "UGI 分数",
+    "w10Score": "W/10 分数",
+    "ideology": "意识形态",
+    "loading": "正在加载排行榜数据...",
+    "error": "数据加载错误，请稍后重试。",
+    "noResults": "未找到符合过滤条件的模型。",
+    "ugiTooltip": "无审查通用智能：敏感话题的知识广度（0-100）",
+    "w10Tooltip": "回答意愿：对争议话题的参与程度（0-10）",
+    "modelsCount": "{count, plural, =0 {无模型} other {# 个模型}}"
+  },
+  "footer": {
+    "dataSourced": "数据来源：Hugging Face 上的 {link}",
+    "ugiLeaderboard": "UGI 排行榜",
+    "note": "UGI 衡量模型对无审查信息的知识 | W/10 衡量回答意愿（0-10）",
+    "poweredBy": "基于 Next.js 14 + Tailwind + shadcn 构建"
+  },
+  "theme": {
+    "toggle": "切换主题"
+  },
+  "ideologies": {
+    "Liberalism": "自由主义",
+    "Centrism": "中间派",
+    "Classical Liberalism": "古典自由主义",
+    "Conservatism": "保守主义",
+    "Moderate Conservatism": "温和保守主义",
+    "Social Democracy": "社会民主主义",
+    "Social Liberalism": "社会自由主义",
+    "Unknown": "未知",
+    "NA": "不适用"
+  }
+}

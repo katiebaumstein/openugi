@@ -1,0 +1,118 @@
+{
+  "id": "openugi",
+  "name": "OpenUGI — Uncensored General Intelligence Leaderboard",
+  "version": "2.0.0",
+  "description": "Web interface for the UGI leaderboard — ranks 1,175+ AI models by Uncensored General Intelligence (UGI) and Willingness-to-answer (W/10) scores. Ghibli-themed Next.js 14 app with hourly data refresh from HuggingFace, trilingual UI (EN/ZH/AR with RTL), SQLite time-series history.",
+  "type": "web-app",
+  "status": "active",
+  "tech": [
+    "Next.js 14",
+    "React 18",
+    "TypeScript",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "next-intl",
+    "Framer Motion",
+    "@tanstack/react-table",
+    "sharp",
+    "Python 3",
+    "SQLite",
+    "PM2",
+    "Nginx",
+    "Let's Encrypt",
+    "AWS Lightsail",
+    "Hugging Face"
+  ],
+  "entry_points": {
+    "app_source": "b/src/app/page.tsx",
+    "app_layout": "b/src/app/layout.tsx",
+    "api_leaderboard": "b/src/app/api/leaderboard/route.ts",
+    "api_stats": "b/src/app/api/stats/route.ts",
+    "api_health": "b/src/app/api/health/route.ts",
+    "data_loader": "b/src/lib/data.ts",
+    "messages_en": "b/messages/en.json",
+    "messages_zh": "b/messages/zh.json",
+    "messages_ar": "b/messages/ar.json",
+    "pm2_config": "b/ecosystem.config.js",
+    "deploy_script": "b/deploy.sh",
+    "nginx_config": "b/nginx/openugi.com.conf",
+    "fetcher": "shared/fetch.py",
+    "schema": "shared/schema.sql",
+    "comparison_doc": "COMPARISON.md"
+  },
+  "hosting": {
+    "instance": "web-hosting-01",
+    "ip": "107.20.206.158",
+    "ssh_alias": "webhost",
+    "pm2_name": "openugi-b",
+    "port": 4003,
+    "primary_domain": "openugi.com",
+    "domains": ["openugi.com", "www.openugi.com", "b.openugi.com (301 -> openugi.com)"],
+    "paths": {
+      "app": "/var/www/openugi-b/",
+      "shared_data": "/var/www/openugi-shared/"
+    },
+    "ssl": true
+  },
+  "ports": {
+    "app": 4003
+  },
+  "api_routes": {
+    "/api/health": "Liveness check + model count",
+    "/api/leaderboard": "Full snapshot JSON",
+    "/api/stats": "Aggregate stats (totals, top UGI, ideology distribution)"
+  },
+  "data_source": "https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard",
+  "refresh_interval": "hourly (cron 0 * * * * with 0-5min jitter)",
+  "data_pipeline": {
+    "cron": "/etc/cron.d/openugi-fetch",
+    "fetcher": "/var/www/openugi-shared/fetch.py",
+    "latest_snapshot": "/var/www/openugi-shared/data/leaderboard.json",
+    "history_db": "/var/www/openugi-shared/data/history.db",
+    "archive_dir": "/var/www/openugi-shared/archive/YYYY-MM-DD/HH.{json,csv.gz}",
+    "retention": "forever (~860 MB/year)",
+    "tables": ["snapshots (timestamp, model, ugi, w10, ideology, rank)", "fetch_log (ts, status, duration_ms, models_count, error_msg)"]
+  },
+  "npm_scripts": {
+    "dev": "cd b && npm run dev",
+    "build": "cd b && npm run build",
+    "deploy": "cd b && ./deploy.sh",
+    "fetch": "cd shared && python3 fetch.py --no-jitter"
+  },
+  "features": [
+    "1,175+ AI models ranked by UGI/W10 scores",
+    "Ideology filter (Liberalism/Centrism/Conservatism/etc)",
+    "Search by model name",
+    "Sortable columns via @tanstack/react-table",
+    "Light/Dark mode toggle with OS preference detection",
+    "Trilingual UI: English / 中文 / العربية with RTL support",
+    "ICU plural formatting via next-intl",
+    "Ghibli-themed visual aesthetic (cloud patterns, hero banner, vine corners, cat-bus back-to-top)",
+    "Framer Motion animations (hero logo float, card stagger, row transitions, theme toggle)",
+    "Server-side rendering with ISR (60s revalidate)",
+    "Time-series history for trend queries (SQLite)",
+    "Automatic hourly data refresh via cron + jitter"
+  ],
+  "related_projects": [],
+  "tags": [
+    "ai",
+    "llm",
+    "leaderboard",
+    "ugi",
+    "uncensored",
+    "huggingface",
+    "ranking",
+    "dashboard",
+    "next.js",
+    "tailwind",
+    "shadcn",
+    "bilingual",
+    "ghibli",
+    "rtl",
+    "sqlite",
+    "time-series"
+  ],
+  "github_repo": "git@github.com:katiebaumstein/openugi.git",
+  "github_visibility": "private",
+  "notes": "Moved into Claude Code workspace from ~/Documents/git-sync-projects/ on 2026-04-17. Originally authored May-June 2025 in vanilla JS + Express (now preserved as root-level legacy files). Rewritten as Next.js 14 (Version B) and deployed 2026-04-17 after A/B comparison trial; Version A retired same day. See COMPARISON.md for the architectural review that led to the rewrite."
+}
