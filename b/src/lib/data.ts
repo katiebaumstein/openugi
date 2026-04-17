@@ -3,6 +3,8 @@ import path from "path";
 
 export type Model = {
   model: string;
+  /** Upstream-provided canonical URL (HF page for open-weight models). Empty string for API-only/closed models. */
+  modelLink?: string;
   ugi: number;
   w10: number;
   ideology: string;

@@ -95,8 +95,21 @@ def parse_csv(csv_text: str) -> list[dict]:
             or row.get("Political Lean \U0001F4CB")  # "Political Lean 📋" — numeric fallback, not a label
             or "Unknown"
         )
+        # Model Link is upstream-authoritative: HF URL for open-weight models, empty for
+        # API-only/closed models (xai, anthropic Claude, google gemini, openai gpt-4/5, etc).
+        # ~56 of 1175 rows (5%) are empty — don't render a broken HF link for those.
+        #
+        # Upstream data is inconsistent: for variant rows like "foo/bar (agent_count=4)"
+        # they sometimes paste the full annotated name into the URL (producing broken
+        # "huggingface.co/foo/bar (agent_count=4)" paths). Strip any trailing " (…)"
+        # annotation from the URL so the base model page resolves correctly. The
+        # display name still shows the full annotation so the user sees the variant.
+        model_link = (row.get("Model Link") or "").strip()
+        if " (" in model_link:
+            model_link = model_link.split(" (", 1)[0]
         rows.append({
             "model": model,
+            "modelLink": model_link,
             "ugi": _float(row.get("UGI \U0001F3C6", "0")),     # "UGI 🏆"
             "w10": _float(row.get("W/10 \U0001F44D", "0")),    # "W/10 👍"
             "ideology": ideology_raw.strip() or "Unknown",

@@ -5,20 +5,9 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-/** Given "org/model-name", return a sensible canonical URL (HuggingFace by default). */
-export function getModelUrl(modelName: string): string {
-  const parts = modelName.split("/");
-  if (parts.length < 2) return `https://huggingface.co/models?search=${encodeURIComponent(modelName)}`;
-  const provider = parts[0].toLowerCase();
-  const overrides: Record<string, string> = {
-    openai: "https://platform.openai.com/docs/models",
-    anthropic: "https://www.anthropic.com/claude",
-    google: "https://ai.google.dev/gemini-api/docs/models/gemini",
-    xai: "https://x.ai/blog",
-    perplexity: "https://www.perplexity.ai/",
-    reka: "https://www.reka.ai/",
-  };
-  return overrides[provider] ?? `https://huggingface.co/${modelName}`;
+/** Classify a model's provider for visual distinction. Deliberately tiny — upstream Model Link is authoritative for URLs. */
+export function isHuggingFaceLink(url: string | undefined | null): boolean {
+  return !!url && /^https?:\/\/(www\.)?huggingface\.co\//i.test(url);
 }
 
 /** Classify ideology for coloring. Returns a Tailwind class suffix. */

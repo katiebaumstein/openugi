@@ -13,7 +13,7 @@ import {
 } from "@tanstack/react-table";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Crown, Medal, ExternalLink, Info } from "lucide-react";
+import { Crown, Medal, ExternalLink, Info, Lock, Download } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
 import {
@@ -29,7 +29,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { cn, getModelUrl, ideologyTone } from "@/lib/utils";
+import { cn, isHuggingFaceLink, ideologyTone } from "@/lib/utils";
 import type { Model } from "@/lib/data";
 
 type Props = { data: Model[] };
@@ -98,16 +98,34 @@ export function LeaderboardTable({ data }: Props) {
           String(row.getValue(id)).toLowerCase().includes(String(value).toLowerCase()),
         cell: ({ row }) => {
           const name = row.getValue<string>("model");
+          const link = row.original.modelLink;
+          // Upstream gave us a URL → link to it. HF links get a download icon (open weights).
+          // No URL → closed/API-only model; render plain with a lock hint, no broken link.
+          if (link) {
+            const isHF = isHuggingFaceLink(link);
+            return (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-1.5 hover:text-primary underline-offset-4 hover:underline font-medium"
+                title={isHF ? "Open weights on Hugging Face" : "Open model page"}
+              >
+                {name}
+                {isHF
+                  ? <Download className="h-3.5 w-3.5 opacity-60 flex-shrink-0" />
+                  : <ExternalLink className="h-3.5 w-3.5 opacity-60 flex-shrink-0" />}
+              </a>
+            );
+          }
           return (
-            <a
-              href={getModelUrl(name)}
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-1.5 hover:text-primary underline-offset-4 hover:underline font-medium"
+            <span
+              className="inline-flex items-center gap-1.5 font-medium text-muted-foreground"
+              title="Closed / API-only model — no downloadable weights"
             >
               {name}
-              <ExternalLink className="h-3 w-3 opacity-60 flex-shrink-0" />
-            </a>
+              <Lock className="h-3.5 w-3.5 opacity-50 flex-shrink-0" />
+            </span>
           );
         },
       },
