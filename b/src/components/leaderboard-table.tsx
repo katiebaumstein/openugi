@@ -182,7 +182,7 @@ export function LeaderboardTable({ data }: Props) {
             display = name;
           }
           return (
-            <span className={cn("inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium ring-1 ring-inset", ideologyTone(name))}>
+            <span className={cn("inline-flex items-center rounded-md px-2.5 py-1 text-sm font-medium ring-1 ring-inset", ideologyTone(name))}>
               {display}
             </span>
           );
@@ -246,21 +246,21 @@ export function LeaderboardTable({ data }: Props) {
           </SelectContent>
         </Select>
 
-        <div className="ml-auto text-sm text-muted-foreground">
+        <div className="ml-auto text-base text-muted-foreground">
           {t("modelsCount", { count: rowCount })}
         </div>
       </div>
 
       <div className="rounded-xl border bg-card/80 backdrop-blur overflow-hidden shadow-sm">
         <div className="overflow-x-auto">
-          <table className="w-full text-sm">
+          <table className="w-full text-base">
             <thead className="bg-muted/50">
               {table.getHeaderGroups().map((hg) => (
                 <tr key={hg.id}>
                   {hg.headers.map((h) => (
                     <th
                       key={h.id}
-                      className="px-4 py-3 text-left font-semibold text-xs uppercase tracking-wide text-muted-foreground"
+                      className="px-5 py-4 text-left font-semibold text-sm text-muted-foreground"
                       style={{ width: h.getSize() }}
                     >
                       {h.isPlaceholder ? null : flexRender(h.column.columnDef.header, h.getContext())}
@@ -285,7 +285,7 @@ export function LeaderboardTable({ data }: Props) {
                     )}
                   >
                     {row.getVisibleCells().map((cell) => (
-                      <td key={cell.id} className="px-4 py-2.5 align-middle">
+                      <td key={cell.id} className="px-5 py-3.5 align-middle">
                         {flexRender(cell.column.columnDef.cell, cell.getContext())}
                       </td>
                     ))}
@@ -294,7 +294,7 @@ export function LeaderboardTable({ data }: Props) {
               </AnimatePresence>
               {rowCount === 0 && (
                 <tr>
-                  <td colSpan={5} className="px-4 py-8 text-center text-muted-foreground">
+                  <td colSpan={5} className="px-5 py-10 text-center text-muted-foreground">
                     {t("noResults")}
                   </td>
                 </tr>
